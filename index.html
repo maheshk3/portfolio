@@ -91,71 +91,131 @@
     <section class="hero-section" id="hero">
       <div class="container hero-container">
         
-        <!-- Center Column Editorial Header -->
-        <div class="hero-centerpiece">
-          <!-- Availability Pill -->
-          <div class="availability-pill">
-            <span class="pulse-indicator"></span>
-            <span class="pill-text">Available for Software Engineer Roles &bull; 2026 Grad</span>
-          </div>
-
-          <!-- Hero Headline -->
-          <h1 class="hero-headline">
-            Software Engineer crafting <span class="gradient-text">high-performance backend architectures</span> &amp; intelligent systems.
-          </h1>
-
-          <!-- Typewriter Specialization -->
-          <div class="typewriter-box">
-            <span class="type-lead">Focus areas: </span>
-            <span class="type-target" id="typewriterText"></span>
-            <span class="type-blinker">_</span>
-          </div>
-
-          <!-- Bio Paragraph -->
-          <p class="hero-bio">
-            Final-year Computer Science undergraduate at <strong>G. Pulla Reddy Engineering College</strong>. Proven track record building <strong>multithreaded bulk ingestion engines (Summer Internship 2025 at Six Phrase)</strong>, designing <strong>strict $O(1)$ in-memory LRU caching algorithms</strong>, and training <strong>OpenCV + LSTM computer vision models (Hexart.In)</strong>.
-          </p>
-
-          <!-- Action Buttons -->
-          <div class="hero-action-row">
-            <a href="#projects" class="btn btn-primary">
-              <i class="fa-solid fa-layer-group"></i>
-              <span>Explore Projects</span>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <i class="fa-regular fa-envelope"></i>
-              <span>Get in Touch</span>
-            </a>
-            <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-              <i class="fa-brands fa-github"></i>
-              <span>github.com/maheshk3</span>
-            </a>
-            <a href="https://www.linkedin.com/in/mahesh-kammari-295802376/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-              <i class="fa-brands fa-linkedin-in"></i>
-              <span>LinkedIn</span>
-            </a>
-          </div>
-
-          <!-- Fast Contact Strip -->
-          <div class="hero-fast-strip">
-            <div class="fast-item copyable" id="copyHeroEmail" title="Click to copy email">
-              <i class="fa-solid fa-envelope"></i>
-              <span>mahe3759@gmail.com</span>
-              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copy</span>
+        <div class="hero-grid-layout">
+          <!-- Left Column: Personal Brand & Elevator Pitch -->
+          <div class="hero-left-col">
+            
+            <!-- Availability Pill -->
+            <div class="availability-pill">
+              <span class="pulse-indicator"></span>
+              <span class="pill-text">Open to Software Engineer Roles &bull; 2026 Grad</span>
             </div>
-            <div class="fast-item copyable" id="copyHeroPhone" title="Click to copy phone">
-              <i class="fa-solid fa-phone"></i>
-              <span>+91 9703847338</span>
-              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copy</span>
+
+            <!-- Hero Name & Title -->
+            <h1 class="hero-main-title">
+              Kammari <span class="gradient-text">Mahesh</span>
+            </h1>
+            <p class="hero-role-lead">
+              Software Engineer &bull; Full Stack Java &amp; Scalable Systems
+            </p>
+
+            <!-- Refined Concise Pitch -->
+            <p class="hero-intro-text">
+              Final-year Computer Science undergraduate at <strong>G. Pulla Reddy Engineering College</strong>. Proven track record architecting high-throughput concurrent backend systems during my <strong>Summer Internship 2025 at Six Phrase</strong>, engineering deterministic <strong>strict $O(1)$ LRU cache algorithms</strong>, and developing live <strong>computer vision neural models (Hexart.In)</strong>.
+            </p>
+
+            <!-- Clean Highlight Tags -->
+            <div class="hero-tag-pills">
+              <span class="hero-tag highlight"><i class="fa-brands fa-java"></i> Java 17</span>
+              <span class="hero-tag highlight"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+              <span class="hero-tag dsa"><i class="fa-solid fa-bolt"></i> O(1) Cache</span>
+              <span class="hero-tag summer"><i class="fa-solid fa-sun"></i> Summer Intern '25</span>
+              <span class="hero-tag ai"><i class="fa-solid fa-brain"></i> OpenCV + LSTM</span>
+              <span class="hero-tag"><i class="fa-brands fa-react"></i> React.js</span>
             </div>
-            <div class="fast-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Kurnool, AP, India</span>
+
+            <!-- Action Buttons Row -->
+            <div class="hero-action-row">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>View Projects</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Get in Touch</span>
+              </a>
+              <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="GitHub (maheshk3)">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/mahesh-kammari-295802376/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+            <!-- Fast Contact Strip -->
+            <div class="hero-fast-strip">
+              <div class="fast-item copyable" id="copyHeroEmail" title="Click to copy email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>mahe3759@gmail.com</span>
+                <span class="copy-badge"><i class="fa-regular fa-copy"></i></span>
+              </div>
+              <div class="fast-item copyable" id="copyHeroPhone" title="Click to copy phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 9703847338</span>
+                <span class="copy-badge"><i class="fa-regular fa-copy"></i></span>
+              </div>
+              <div class="fast-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Kurnool, AP, India</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Developer Console Card -->
+          <div class="hero-right-col">
+            <div class="dev-terminal-card spotlight-card">
+              <div class="terminal-bar">
+                <div class="terminal-dots">
+                  <span class="t-dot r"></span>
+                  <span class="t-dot y"></span>
+                  <span class="t-dot g"></span>
+                </div>
+                <div class="terminal-tab-title">
+                  <i class="fa-solid fa-terminal"></i>
+                  <span>mahesh@dev-workstation:~ (zsh)</span>
+                </div>
+                <button class="terminal-action-btn" id="copyTerminalSnippet" title="Copy profile JSON">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <div class="terminal-content">
+                <div class="term-command-line">
+                  <span class="term-prompt">&gt;</span>
+                  <span class="term-command">curl -s https://api.maheshk3.dev/profile.json</span>
+                </div>
+
+                <pre class="term-json"><code>{
+  <span class="j-key">"engineer"</span>: <span class="j-str">"Kammari Mahesh"</span>,
+  <span class="j-key">"role"</span>: <span class="j-str">"Software Engineer"</span>,
+  <span class="j-key">"college"</span>: <span class="j-str">"G. Pulla Reddy Engineering College"</span>,
+  <span class="j-key">"graduation"</span>: <span class="j-num">2026</span>,
+  <span class="j-key">"summer_internship"</span>: <span class="j-str">"Six Phrase (Java Multithreading)"</span>,
+  <span class="j-key">"ai_internship"</span>: <span class="j-str">"Hexart.In (OpenCV + LSTM)"</span>,
+  <span class="j-key">"flagship_dsa"</span>: <span class="j-str">"Strict O(1) LRU In-Memory Cache"</span>,
+  <span class="j-key">"status"</span>: <span class="j-str">"Available for Immediate Impact 🚀"</span>
+}</code></pre>
+
+                <div class="term-status-line">
+                  <span class="status-indicator-green"></span>
+                  <span class="term-active-status" id="termStatusText">System Readiness: 200 OK &bull; All Tests Passing</span>
+                </div>
+              </div>
+
+              <div class="terminal-footer">
+                <span class="term-tag"><i class="fa-brands fa-java"></i> Java 17</span>
+                <span class="term-tag"><i class="fa-solid fa-bolt"></i> O(1) Cache</span>
+                <span class="term-tag"><i class="fa-solid fa-brain"></i> Vision</span>
+                <span class="term-tag"><i class="fa-brands fa-react"></i> React</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Metric Cards Strip -->
+        <!-- Metric Cards Strip (Anchoring the Hero) -->
         <div class="hero-metrics-bar spotlight-card">
           <div class="metric-cell">
             <div class="metric-top">

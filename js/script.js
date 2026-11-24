@@ -491,6 +491,8 @@ function initClipboardHelpers() {
   const heroPhone = document.getElementById('copyHeroPhone');
   const contactEmail = document.getElementById('copyContactEmail');
   const contactPhone = document.getElementById('copyContactPhone');
+  const termSnippet = document.getElementById('copyTerminalSnippet');
+  const termStatusText = document.getElementById('termStatusText');
 
   const copyEmail = () => copyToClipboard('mahe3759@gmail.com', 'Email copied: mahe3759@gmail.com');
   const copyPhone = () => copyToClipboard('+919703847338', 'Phone copied: +91 9703847338');
@@ -500,6 +502,27 @@ function initClipboardHelpers() {
 
   if (heroPhone) heroPhone.addEventListener('click', copyPhone);
   if (contactPhone) contactPhone.addEventListener('click', copyPhone);
+
+  if (termSnippet) {
+    termSnippet.addEventListener('click', () => {
+      const snippet = `{\n  "engineer": "Kammari Mahesh",\n  "role": "Software Engineer",\n  "email": "mahe3759@gmail.com",\n  "phone": "+91 9703847338",\n  "github": "https://github.com/maheshk3",\n  "linkedin": "https://www.linkedin.com/in/mahesh-kammari-295802376/"\n}`;
+      copyToClipboard(snippet, 'Developer profile JSON copied!');
+    });
+  }
+
+  if (termStatusText) {
+    const statuses = [
+      'System Readiness: 200 OK • All Tests Passing',
+      'JVM Runtime: Java 17 LTS • Heap Optimized',
+      'Algorithm Cache: Strict O(1) Verified',
+      'Vision Pipeline: 60 FPS • Keypoints Tracking'
+    ];
+    let idx = 0;
+    setInterval(() => {
+      idx = (idx + 1) % statuses.length;
+      termStatusText.textContent = statuses[idx];
+    }, 3800);
+  }
 }
 
 function copyToClipboard(text, successMsg) {
