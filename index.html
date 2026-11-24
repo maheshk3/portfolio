@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kammari Mahesh - Full Stack Java & Software Engineer Portfolio. Specializing in Spring Boot, RESTful APIs, high-performance algorithms, and scalable web architectures." />
-  <meta name="keywords" content="Kammari Mahesh, Software Engineer, Java Developer, Spring Boot, Full Stack, Portfolio, Computer Science, G Pulla Reddy Engineering College" />
+  <meta name="description" content="Kammari Mahesh - Software Engineer Portfolio. Full Stack Java, Spring Boot, Strict O(1) Cache Architecture, Computer Vision & Machine Learning." />
+  <meta name="keywords" content="Kammari Mahesh, Software Engineer, Java Developer, Spring Boot, LRU Cache, OpenCV, LSTM, G Pulla Reddy Engineering College" />
   <meta name="author" content="Kammari Mahesh" />
 
   <!-- Open Graph / Meta -->
-  <meta property="og:title" content="Kammari Mahesh | Software Engineer & Full Stack Java Developer" />
-  <meta property="og:description" content="Portfolio of Kammari Mahesh - Computer Science graduate specializing in Full Stack Java, Spring Boot, REST APIs, and High-Performance Systems." />
+  <meta property="og:title" content="Kammari Mahesh — Software Engineer Portfolio" />
+  <meta property="og:description" content="Software Engineer specializing in Full Stack Java, High-Performance O(1) Algorithms, and Applied Machine Learning." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maheshk3.github.io/" />
 
-  <title>Kammari Mahesh | Software Engineer & Full Stack Java Developer</title>
+  <title>Kammari Mahesh &bull; Software Engineer</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='62%' font-size='50' font-family='monospace' font-weight='bold' fill='%2310b981' text-anchor='middle'>&lt;M/&gt;</text></svg>" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23090d16'/><text x='50%' y='64%' font-size='48' font-family='monospace' font-weight='800' fill='%2310b981' text-anchor='middle'>KM</text></svg>" />
 
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,48 +30,53 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Background Glow & Grid Canvas -->
-  <div class="bg-decorations">
-    <div class="glow-orb orb-1"></div>
-    <div class="glow-orb orb-2"></div>
-    <div class="glow-orb orb-3"></div>
-    <div class="grid-overlay"></div>
+  <!-- Ambient Atmospheric Lighting -->
+  <div class="ambient-canvas">
+    <div class="glow-spot spot-primary"></div>
+    <div class="glow-spot spot-secondary"></div>
+    <div class="glow-spot spot-tertiary"></div>
+    <div class="mesh-grid"></div>
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- NAVIGATION BAR -->
   <header class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="brand-logo" aria-label="Kammari Mahesh Home">
-        <span class="logo-bracket">&lt;</span>
-        <span class="logo-text">Mahesh</span>
-        <span class="logo-accent">.dev</span>
-        <span class="logo-bracket">/&gt;</span>
+      <a href="#hero" class="brand-badge" aria-label="Kammari Mahesh">
+        <span class="brand-monogram">KM</span>
+        <span class="brand-name">Mahesh<span class="brand-dot">.</span></span>
       </a>
 
-      <!-- Desktop Nav -->
-      <nav class="nav-menu" id="navMenu">
-        <a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a>
-        <a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a>
-        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
-        <a href="#projects" class="nav-link"><i class="fa-solid fa-code"></i> Projects</a>
-        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
-        <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      <!-- Desktop Links -->
+      <nav class="nav-links" id="navMenu">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+        <a href="#experience" class="nav-item">Experience</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#education" class="nav-item">Education</a>
+        <a href="#contact" class="nav-item">Contact</a>
       </nav>
 
-      <!-- Action items -->
+      <!-- Right Actions -->
       <div class="nav-actions">
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme" title="Toggle theme">
           <i class="fa-solid fa-moon moon-icon"></i>
           <i class="fa-solid fa-sun sun-icon"></i>
         </button>
 
-        <a href="#contact" class="btn btn-outline btn-sm hire-btn">
-          <span>Hire Me</span>
+        <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub (maheshk3)">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mahesh-kammari-295802376/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="#contact" class="btn btn-nav-cta">
+          <span>Let's Connect</span>
           <i class="fa-solid fa-arrow-right"></i>
         </a>
 
-        <!-- Mobile Menu Toggle -->
-        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation menu">
+        <!-- Mobile Hamburger -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menu">
           <span></span>
           <span></span>
           <span></span>
@@ -79,760 +85,286 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- MAIN WRAPPER -->
   <main>
     <!-- HERO SECTION -->
     <section class="hero-section" id="hero">
       <div class="container hero-container">
-        <div class="hero-content">
-          <!-- Availability Badge -->
-          <div class="status-badge">
-            <span class="status-dot"></span>
-            <span class="status-text">Available for Software Engineer Roles &bull; 2026 Grad</span>
+        
+        <!-- Center Column Editorial Header -->
+        <div class="hero-centerpiece">
+          <!-- Availability Pill -->
+          <div class="availability-pill">
+            <span class="pulse-indicator"></span>
+            <span class="pill-text">Available for Software Engineer Roles &bull; 2026 Grad</span>
           </div>
 
-          <h1 class="hero-title">
-            Hi, I'm <span class="gradient-text">Kammari Mahesh</span>
+          <!-- Hero Headline -->
+          <h1 class="hero-headline">
+            Software Engineer crafting <span class="gradient-text">high-performance backend architectures</span> &amp; intelligent systems.
           </h1>
 
-          <div class="hero-typewriter">
-            <span class="type-prefix">I specialize in </span>
-            <span class="type-text" id="typewriterText"></span>
-            <span class="type-cursor">|</span>
+          <!-- Typewriter Specialization -->
+          <div class="typewriter-box">
+            <span class="type-lead">Focus areas: </span>
+            <span class="type-target" id="typewriterText"></span>
+            <span class="type-blinker">_</span>
           </div>
 
-          <p class="hero-description">
-            Computer Science undergraduate at <strong>G. Pulla Reddy Engineering College</strong> with proven expertise in <strong>Core Java, Multithreaded Backend Systems, High-Performance O(1) Cache Architectures, and Applied Computer Vision (OpenCV + LSTM)</strong>. Completed a rigorous <strong>Summer Backend Internship at Six Phrase</strong> and <strong>ML Internship at Hexart.In</strong>.
+          <!-- Bio Paragraph -->
+          <p class="hero-bio">
+            Final-year Computer Science undergraduate at <strong>G. Pulla Reddy Engineering College</strong>. Proven track record building <strong>multithreaded bulk ingestion engines (Summer Internship 2025 at Six Phrase)</strong>, designing <strong>strict $O(1)$ in-memory LRU caching algorithms</strong>, and training <strong>OpenCV + LSTM computer vision models (Hexart.In)</strong>.
           </p>
 
-          <!-- Quick Action Buttons -->
-          <div class="hero-buttons">
+          <!-- Action Buttons -->
+          <div class="hero-action-row">
             <a href="#projects" class="btn btn-primary">
-              <i class="fa-solid fa-cubes"></i>
-              <span>View Projects</span>
+              <i class="fa-solid fa-layer-group"></i>
+              <span>Explore Projects</span>
             </a>
             <a href="#contact" class="btn btn-secondary">
               <i class="fa-regular fa-envelope"></i>
-              <span>Contact Me</span>
+              <span>Get in Touch</span>
             </a>
-            <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub Profile">
+            <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
               <i class="fa-brands fa-github"></i>
-              <span>GitHub</span>
+              <span>github.com/maheshk3</span>
             </a>
-            <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="LinkedIn Profile">
-              <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/mahesh-kammari-295802376/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              <i class="fa-brands fa-linkedin-in"></i>
               <span>LinkedIn</span>
             </a>
           </div>
 
-          <!-- Quick Contact Badges -->
-          <div class="hero-contact-strip">
-            <a href="mailto:mahe3759@gmail.com" class="contact-pill" title="Send email">
+          <!-- Fast Contact Strip -->
+          <div class="hero-fast-strip">
+            <div class="fast-item copyable" id="copyHeroEmail" title="Click to copy email">
               <i class="fa-solid fa-envelope"></i>
               <span>mahe3759@gmail.com</span>
-            </a>
-            <a href="tel:+919703847338" class="contact-pill" title="Call">
+              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copy</span>
+            </div>
+            <div class="fast-item copyable" id="copyHeroPhone" title="Click to copy phone">
               <i class="fa-solid fa-phone"></i>
               <span>+91 9703847338</span>
-            </a>
-            <span class="contact-pill location">
+              <span class="copy-badge"><i class="fa-regular fa-copy"></i> Copy</span>
+            </div>
+            <div class="fast-item">
               <i class="fa-solid fa-location-dot"></i>
               <span>Kurnool, AP, India</span>
-            </span>
+            </div>
           </div>
         </div>
 
-        <!-- Hero Dev Terminal Card -->
-        <div class="hero-terminal-wrapper">
-          <div class="terminal-card">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-              <div class="terminal-title">mahesh@dev-workstation:~ (bash)</div>
-              <div class="terminal-actions">
-                <button class="terminal-copy-btn" id="copySnippetBtn" title="Copy developer profile">
-                  <i class="fa-regular fa-copy"></i>
-                </button>
-              </div>
+        <!-- Metric Cards Strip -->
+        <div class="hero-metrics-bar spotlight-card">
+          <div class="metric-cell">
+            <div class="metric-top">
+              <span class="metric-num">O(1)</span>
+              <i class="fa-solid fa-bolt metric-tag-icon"></i>
             </div>
-            <div class="terminal-body">
-              <div class="term-line">
-                <span class="term-prompt">$</span>
-                <span class="term-cmd">curl -s https://api.kammari-mahesh.dev/profile.json</span>
-              </div>
-              <pre class="term-output"><code>{
-  <span class="json-key">"name"</span>: <span class="json-str">"Kammari Mahesh"</span>,
-  <span class="json-key">"role"</span>: <span class="json-str">"Software Engineer &amp; Backend Systems"</span>,
-  <span class="json-key">"college"</span>: <span class="json-str">"G. Pulla Reddy Engineering College (2026)"</span>,
-  <span class="json-key">"flagship_projects"</span>: [
-    <span class="json-str">"High-Performance O(1) LRU Cache (Java)"</span>,
-    <span class="json-str">"Indian Sign Language Recognition (OpenCV + LSTM)"</span>,
-    <span class="json-str">"Expense Tracker Web App (React.js)"</span>
-  ],
-  <span class="json-key">"summer_internship_2025"</span>: <span class="json-str">"Java Backend Intern @ Six Phrase"</span>,
-  <span class="json-key">"ml_internship"</span>: <span class="json-str">"Computer Vision Intern @ Hexart.In"</span>,
-  <span class="json-key">"status"</span>: <span class="json-str">"Available for high-impact roles 🚀"</span>
-}</code></pre>
-              <div class="term-interactive">
-                <div class="term-line">
-                  <span class="term-prompt">$</span>
-                  <span class="term-active-cmd" id="termCurrentCmd">system.checkReadiness()</span>
-                </div>
-                <div class="term-badge-feedback">
-                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> Java 17</span>
-                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> Strict O(1) Cache</span>
-                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> OpenCV &amp; LSTM</span>
-                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> React.js</span>
-                </div>
-              </div>
+            <div class="metric-label">Cache Complexity</div>
+            <div class="metric-hint">Doubly Linked List + HashMap</div>
+          </div>
+
+          <div class="metric-cell">
+            <div class="metric-top">
+              <span class="metric-num">2025</span>
+              <span class="summer-badge-tag"><i class="fa-solid fa-sun"></i> Summer</span>
             </div>
-            <div class="terminal-footer">
-              <span class="term-hint"><i class="fa-solid fa-terminal"></i> Proactive Problem Solver</span>
-              <span class="term-badge">Status: 200 OK</span>
+            <div class="metric-label">Backend Internship</div>
+            <div class="metric-hint">Six Phrase &bull; Multithreading</div>
+          </div>
+
+          <div class="metric-cell">
+            <div class="metric-top">
+              <span class="metric-num">60+</span>
+              <span class="metric-sub-unit">FPS</span>
             </div>
+            <div class="metric-label">Computer Vision Pipeline</div>
+            <div class="metric-hint">OpenCV + LSTM Gesture Model</div>
+          </div>
+
+          <div class="metric-cell">
+            <div class="metric-top">
+              <span class="metric-num">7.41</span>
+              <span class="metric-sub-unit">CGPA</span>
+            </div>
+            <div class="metric-label">B.Tech Comp Science</div>
+            <div class="metric-hint">G. Pulla Reddy Engg College</div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- METRICS STRIP -->
-    <section class="metrics-section">
-      <div class="container">
-        <div class="metrics-grid">
-          <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-microchip"></i></div>
-            <div class="metric-value">O(1)</div>
-            <div class="metric-label">Cache Complexity Engineered</div>
-            <div class="metric-sub">Strict LRU eviction &amp; TTL</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-building-columns"></i></div>
-            <div class="metric-value">7.41</div>
-            <div class="metric-label">B.Tech CGPA</div>
-            <div class="metric-sub">Computer Science &amp; Engg</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-laptop-code"></i></div>
-            <div class="metric-value">2+</div>
-            <div class="metric-label">Industry Internships</div>
-            <div class="metric-sub">Backend (Java) &amp; ML (Vision)</div>
-          </div>
-          <div class="metric-card">
-            <div class="metric-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <div class="metric-value">100%</div>
-            <div class="metric-label">Secure Architecture</div>
-            <div class="metric-sub">JWT &amp; Role-Based Security</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-user"></i> Professional Profile</span>
-          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-          <p class="section-subtitle">Bridging robust backend engineering with thoughtful modern web experiences.</p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-narrative">
-            <h3 class="narrative-heading">
-              Engineering reliable, high-performance systems from the ground up.
-            </h3>
-            <p>
-              I am a final-year <strong>Computer Science &amp; Engineering</strong> student at <strong>G. Pulla Reddy Engineering College, Kurnool</strong> (2022–2026). My technical passion lies at the intersection of <strong>Full Stack Java development, Spring Boot architectures</strong>, and rigorous core computer science fundamentals.
-            </p>
-            <p>
-              Unlike surface-level developers, I take pride in understanding what happens under the hood—from optimizing <strong>multithreaded bulk data ingestion</strong> during my backend internship to crafting a <strong>zero-dependency LRU cache</strong> with strict $O(1)$ operations and custom doubly linked lists.
-            </p>
-            <p>
-              My goal is to join a forward-thinking engineering team where I can architect scalable RESTful APIs, contribute clean and maintainable code, and solve meaningful computational challenges.
-            </p>
-
-            <div class="about-key-points">
-              <div class="point-item">
-                <i class="fa-solid fa-check-circle"></i>
-                <div>
-                  <strong>Backend First Philosophy:</strong> Designing idempotent REST APIs with Spring Boot, Spring Data JPA, and normalized MySQL schemas.
-                </div>
-              </div>
-              <div class="point-item">
-                <i class="fa-solid fa-check-circle"></i>
-                <div>
-                  <strong>Algorithmic Thinking:</strong> Deep practice in Data Structures, Algorithms, HashMaps, Linked Lists, and Object-Oriented design patterns.
-                </div>
-              </div>
-              <div class="point-item">
-                <i class="fa-solid fa-check-circle"></i>
-                <div>
-                  <strong>Versatile &amp; Curious:</strong> Hands-on experience across React frontends and Machine Learning computer vision pipelines (OpenCV + LSTM).
-                </div>
-              </div>
-            </div>
-
-            <div class="about-cta-row">
-              <a href="#contact" class="btn btn-primary">
-                <i class="fa-solid fa-handshake"></i> Let's Talk
-              </a>
-              <a href="#experience" class="btn btn-outline">
-                <i class="fa-solid fa-timeline"></i> Review My Track Record
-              </a>
-            </div>
-          </div>
-
-          <div class="about-cards-column">
-            <div class="feature-card">
-              <div class="feat-icon"><i class="fa-brands fa-java"></i></div>
-              <div class="feat-content">
-                <h4>Full Stack Java &amp; Spring Boot</h4>
-                <p>Enterprise-grade backend services with Spring Data JPA, Hibernate, JWT authorization, and Spring Security.</p>
-              </div>
-            </div>
-
-            <div class="feature-card">
-              <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
-              <div class="feat-content">
-                <h4>High-Performance Systems</h4>
-                <p>Engineered low-latency in-memory caching mechanisms and multithreaded concurrent pipelines.</p>
-              </div>
-            </div>
-
-            <div class="feature-card">
-              <div class="feat-icon"><i class="fa-brands fa-react"></i></div>
-              <div class="feat-content">
-                <h4>Modern Frontend (React)</h4>
-                <p>Dynamic, responsive Single Page Applications (SPAs) with state management, clean CSS, and accessibility.</p>
-              </div>
-            </div>
-
-            <div class="feature-card">
-              <div class="feat-icon"><i class="fa-solid fa-brain"></i></div>
-              <div class="feat-content">
-                <h4>Applied Machine Learning</h4>
-                <p>Computer Vision workflows utilizing OpenCV and sequential LSTM neural networks for gesture recognition.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TECHNICAL SKILLS SECTION -->
-    <section class="section skills-section" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-terminal"></i> Technical Stack</span>
-          <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
-          <p class="section-subtitle">Categorized breakdown of the languages, frameworks, and developer tools in my daily toolkit.</p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Backend & Enterprise -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon"><i class="fa-solid fa-server"></i></div>
-              <div>
-                <h3 class="cat-title">Backend &amp; Enterprise</h3>
-                <span class="cat-subtitle">Core Java &amp; Frameworks</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <div class="skill-chip">
-                <i class="fa-brands fa-java"></i>
-                <span class="skill-name">Java</span>
-                <span class="skill-lvl">Core &amp; Advanced</span>
-              </div>
-              <div class="skill-chip highlight">
-                <i class="fa-solid fa-leaf"></i>
-                <span class="skill-name">Spring Boot</span>
-                <span class="skill-lvl">Microservices</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-database"></i>
-                <span class="skill-name">Spring Data JPA</span>
-                <span class="skill-lvl">Hibernate ORM</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-shield"></i>
-                <span class="skill-name">Spring Security</span>
-                <span class="skill-lvl">JWT Auth</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-network-wired"></i>
-                <span class="skill-name">RESTful APIs</span>
-                <span class="skill-lvl">Web Services</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-brands fa-python"></i>
-                <span class="skill-name">Python</span>
-                <span class="skill-lvl">Scripting &amp; ML</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Core Computer Science -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
-              <div>
-                <h3 class="cat-title">Core Computer Science</h3>
-                <span class="cat-subtitle">Foundations &amp; Architecture</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <div class="skill-chip highlight">
-                <i class="fa-solid fa-sitemap"></i>
-                <span class="skill-name">Data Structures</span>
-                <span class="skill-lvl">Trees, Maps, Lists</span>
-              </div>
-              <div class="skill-chip highlight">
-                <i class="fa-solid fa-bolt"></i>
-                <span class="skill-name">Algorithms</span>
-                <span class="skill-lvl">Time/Space Optimization</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-cubes"></i>
-                <span class="skill-name">OOP Principles</span>
-                <span class="skill-lvl">Clean Architecture</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-diagram-project"></i>
-                <span class="skill-name">DBMS Concepts</span>
-                <span class="skill-lvl">Normalization &amp; ACID</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-arrows-spin"></i>
-                <span class="skill-name">Multithreading</span>
-                <span class="skill-lvl">Concurrency &amp; Threads</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Databases & Persistence -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
-              <div>
-                <h3 class="cat-title">Databases &amp; Persistence</h3>
-                <span class="cat-subtitle">Storage &amp; Data Integration</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <div class="skill-chip highlight">
-                <i class="fa-solid fa-table"></i>
-                <span class="skill-name">MySQL</span>
-                <span class="skill-lvl">Relational Schemas</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-plug"></i>
-                <span class="skill-name">JDBC</span>
-                <span class="skill-lvl">Connection Pooling</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-filter"></i>
-                <span class="skill-name">SQL Queries</span>
-                <span class="skill-lvl">Indexing &amp; Joins</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-memory"></i>
-                <span class="skill-name">In-Memory Cache</span>
-                <span class="skill-lvl">LRU &amp; TTL Eviction</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Frontend Technologies -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon"><i class="fa-brands fa-react"></i></div>
-              <div>
-                <h3 class="cat-title">Frontend Technologies</h3>
-                <span class="cat-subtitle">Client-Side Engineering</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <div class="skill-chip highlight">
-                <i class="fa-brands fa-react"></i>
-                <span class="skill-name">React.js</span>
-                <span class="skill-lvl">Hooks &amp; Components</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-brands fa-js"></i>
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-lvl">ES6+, Async/Await</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-brands fa-html5"></i>
-                <span class="skill-name">HTML5</span>
-                <span class="skill-lvl">Semantic Web</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-brands fa-css3-alt"></i>
-                <span class="skill-name">CSS3</span>
-                <span class="skill-lvl">Flexbox &amp; Grid</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-brands fa-bootstrap"></i>
-                <span class="skill-name">Bootstrap</span>
-                <span class="skill-lvl">Mobile-First</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Developer, Build & Testing Tools -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-              <div>
-                <h3 class="cat-title">Tools &amp; Engineering Workflow</h3>
-                <span class="cat-subtitle">Build, Test, and Version Control</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <div class="skill-chip highlight">
-                <i class="fa-brands fa-git-alt"></i>
-                <span class="skill-name">Git &amp; GitHub</span>
-                <span class="skill-lvl">Version Control</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-box-open"></i>
-                <span class="skill-name">Maven</span>
-                <span class="skill-lvl">Dependency Mgmt</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-code"></i>
-                <span class="skill-name">IntelliJ IDEA</span>
-                <span class="skill-lvl">Primary Java IDE</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-vial"></i>
-                <span class="skill-name">JUnit</span>
-                <span class="skill-lvl">Unit Testing</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-paper-plane"></i>
-                <span class="skill-name">Postman</span>
-                <span class="skill-lvl">API Testing</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-moon"></i>
-                <span class="skill-name">Eclipse IDE</span>
-                <span class="skill-lvl">Development</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Specialized & Applied Skills -->
-          <div class="skill-category-card">
-            <div class="cat-header">
-              <div class="cat-icon"><i class="fa-solid fa-eye"></i></div>
-              <div>
-                <h3 class="cat-title">Specialized Domains</h3>
-                <span class="cat-subtitle">Applied AI &amp; Analytics</span>
-              </div>
-            </div>
-            <div class="skill-tags">
-              <div class="skill-chip highlight">
-                <i class="fa-solid fa-camera"></i>
-                <span class="skill-name">OpenCV</span>
-                <span class="skill-lvl">Computer Vision</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-network-wired"></i>
-                <span class="skill-name">LSTM Networks</span>
-                <span class="skill-lvl">Sequential Models</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-brands fa-google"></i>
-                <span class="skill-name">Google Cloud Analytics</span>
-                <span class="skill-lvl">Certified</span>
-              </div>
-              <div class="skill-chip">
-                <i class="fa-solid fa-key"></i>
-                <span class="skill-name">JWT Tokens</span>
-                <span class="skill-lvl">Stateless Auth</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTERNSHIP EXPERIENCE TIMELINE -->
-    <section class="section experience-section" id="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Work &amp; Industry Exposure</span>
-          <h2 class="section-title">Internship <span class="gradient-text">Experience</span></h2>
-          <p class="section-subtitle">Real-world production engineering across backend concurrent systems and computer vision neural pipelines.</p>
-        </div>
-
-        <div class="timeline">
-          <!-- Summer Internship: Six Phrase Java Backend -->
-          <div class="timeline-item highlight-summer">
-            <div class="timeline-dot summer">
-              <i class="fa-solid fa-sun"></i>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-meta">
-                <div class="company-and-badge">
-                  <span class="company-badge"><i class="fa-solid fa-building"></i> Six Phrase Education Institutions</span>
-                  <span class="badge-summer"><i class="fa-solid fa-sun"></i> Summer Internship 2025</span>
-                </div>
-                <span class="time-range"><i class="fa-regular fa-calendar"></i> May 2025 &ndash; Jun 2025</span>
-              </div>
-              <h3 class="role-title">Java Backend Summer Intern</h3>
-              <div class="location-tag"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu, India &bull; Enterprise Backend Systems</div>
-
-              <p class="role-summary">
-                Selected for a competitive <strong>Summer Backend Internship</strong> dedicated to core Java services, database connection optimization, and high-volume data ingestion infrastructure.
-              </p>
-
-              <ul class="role-bullets">
-                <li>
-                  <i class="fa-solid fa-check"></i>
-                  <span><strong>Multithreaded Bulk Ingestion Pipeline:</strong> Architected a high-concurrency ingestion system using Java multithreading, dividing bulk data records into worker threads, mitigating database lock contention, and drastically cutting batch ingestion latency.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check"></i>
-                  <span><strong>JDBC Integration &amp; Connection Management:</strong> Developed robust database access layers utilizing optimized JDBC statements and connection pooling, ensuring ACID transactions under concurrent workload stress.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check"></i>
-                  <span><strong>Data Structure Optimization:</strong> Refactored in-memory record caches and collection structures to minimize memory footprint and eliminate bottlenecks in student performance data processing.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check"></i>
-                  <span><strong>Testing &amp; Code Quality:</strong> Wrote modular unit tests using JUnit, adhered to strict OOP design patterns, and collaborated within an agile sprint delivery environment.</span>
-                </li>
-              </ul>
-
-              <div class="role-stack">
-                <span class="pill-mini highlight-pill"><i class="fa-solid fa-star"></i> Summer Internship</span>
-                <span class="pill-mini">Core Java 17</span>
-                <span class="pill-mini">Multithreading</span>
-                <span class="pill-mini">JDBC Pooling</span>
-                <span class="pill-mini">Data Structure Optimization</span>
-                <span class="pill-mini">JUnit</span>
-                <span class="pill-mini">Batch Processing</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Machine Learning Intern: Hexart.In -->
-          <div class="timeline-item">
-            <div class="timeline-dot">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-meta">
-                <div class="company-and-badge">
-                  <span class="company-badge"><i class="fa-solid fa-building"></i> Hexart.In</span>
-                  <span class="badge-ai"><i class="fa-solid fa-brain"></i> Applied AI &amp; Vision</span>
-                </div>
-                <span class="time-range"><i class="fa-regular fa-calendar"></i> Dec 2025 &ndash; Apr 2026</span>
-              </div>
-              <h3 class="role-title">Machine Learning Intern</h3>
-              <div class="location-tag"><i class="fa-solid fa-location-dot"></i> Applied Computer Vision &amp; Deep Learning</div>
-
-              <p class="role-summary">
-                Engineered an end-to-end continuous <strong>Indian Sign Language (ISL) recognition system</strong> converting real-time video streams into text via spatial landmark detection and recurrent neural models.
-              </p>
-
-              <ul class="role-bullets">
-                <li>
-                  <i class="fa-solid fa-check"></i>
-                  <span><strong>OpenCV Video Stream Processing:</strong> Designed real-time computer vision frame capture pipeline, isolating 21 spatial hand keypoints and normalizing coordinate vectors under dynamic illumination.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check"></i>
-                  <span><strong>Sequential LSTM Deep Learning:</strong> Architected and trained multi-layer LSTM neural networks to model temporal gesture dynamics across continuous frame sequences, achieving high classification confidence.</span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-check"></i>
-                  <span><strong>Latency &amp; Throughput Tuning:</strong> Optimized inference pipeline to sustain 60+ FPS live stream recognition with negligible frame latency on resource-constrained hardware.</span>
-                </li>
-              </ul>
-
-              <div class="role-stack">
-                <span class="pill-mini">Python</span>
-                <span class="pill-mini">OpenCV</span>
-                <span class="pill-mini">LSTM Networks</span>
-                <span class="pill-mini">Temporal Modeling</span>
-                <span class="pill-mini">Computer Vision</span>
-                <span class="pill-mini">Real-Time Processing</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION -->
+    <!-- FLAGSHIP PROJECTS SECTION (BENTO GRID WITH LIVE INTERACTIVE SIMULATORS) -->
     <section class="section projects-section" id="projects">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-code"></i> Engineering Portfolio</span>
+        <div class="section-heading">
+          <span class="section-kicker"><i class="fa-solid fa-code"></i> Engineering Craftsmanship</span>
           <h2 class="section-title">Flagship <span class="gradient-text">Projects</span></h2>
-          <p class="section-subtitle">High-caliber software implementations: strict O(1) in-memory data structures, computer vision neural networks, and responsive modern web apps.</p>
+          <p class="section-desc">Interactive implementations proving constant-time data structures, real-time computer vision, and responsive web applications.</p>
         </div>
 
-        <!-- Filter Controls -->
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="algorithms">Core CS &amp; Algorithms (Java)</button>
-          <button class="filter-btn" data-filter="vision">Computer Vision &amp; AI (Python)</button>
-          <button class="filter-btn" data-filter="frontend">Frontend &amp; React (SPA)</button>
+        <!-- Project Filter Controls -->
+        <div class="filter-toolbar">
+          <button class="filter-pill active" data-filter="all">All Work</button>
+          <button class="filter-pill" data-filter="algorithms">Core CS &amp; Algorithms (Java)</button>
+          <button class="filter-pill" data-filter="vision">Computer Vision &amp; AI (Python)</button>
+          <button class="filter-pill" data-filter="frontend">Frontend &amp; React (SPA)</button>
         </div>
 
-        <div class="projects-grid">
-          <!-- Project 1: High-Performance LRU Cache WITH INTERACTIVE DEMO -->
-          <div class="project-card featured-highlight" data-category="algorithms">
-            <div class="project-card-header">
-              <div class="project-type-badge special"><i class="fa-solid fa-bolt"></i> High Performance &bull; Strict O(1) DSA</div>
-              <div class="project-links">
-                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+        <div class="bento-grid">
+
+          <!-- BENTO ITEM 1: High-Performance LRU Cache (Flagship) -->
+          <div class="bento-card bento-hero-left spotlight-card" data-category="algorithms">
+            <div class="card-glass-glow"></div>
+            
+            <div class="bento-header">
+              <div class="badge-cluster">
+                <span class="category-badge dsa"><i class="fa-solid fa-bolt"></i> High Performance DSA</span>
+                <span class="complexity-badge">O(1) Strict Bounds</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="link-circle" title="View Source on GitHub">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>
             </div>
 
-            <h3 class="project-title">High-Performance LRU Cache</h3>
-            <p class="project-tagline">Deterministic in-memory caching engine achieving strict O(1) search, insertion, and eviction with TTL validation.</p>
+            <h3 class="bento-title">High-Performance In-Memory LRU Cache</h3>
+            <p class="bento-tagline">Engineered in Java with zero third-party dependencies. Strict O(1) time bounds for search, insertion, and eviction with TTL validation.</p>
 
-            <p class="project-desc">
-              Engineered an optimized in-memory cache completely from scratch in <strong>Java</strong> without relying on third-party collections. Combines a custom <strong>Doubly Linked List</strong> and <strong>HashMap</strong> to guarantee strict $O(1)$ constant-time execution bounds.
-            </p>
-
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <i class="fa-solid fa-gauge-high"></i>
-                <span><strong>Strict O(1) Time Complexity:</strong> Guaranteed constant-time operations for lookups, insertions, and least-recently-used evictions via bi-directional node pointer rewiring.</span>
+            <div class="bento-body-points">
+              <div class="point-row">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Custom Doubly Linked List &amp; HashMap:</strong> Guaranteed constant-time lookups and node re-wiring without collection overhead.</span>
               </div>
-              <div class="highlight-item">
-                <i class="fa-solid fa-clock"></i>
-                <span><strong>Time-to-Live (TTL) Auto-Eviction:</strong> Background expiry validator automatically checks timestamps and purges stale items to maintain optimal heap memory.</span>
+              <div class="point-row">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Time-To-Live (TTL) Expiry Module:</strong> Background thread proactively evicts stale entries based on access timestamps to preserve heap allocation.</span>
               </div>
             </div>
 
-            <!-- INTERACTIVE SIMULATOR (Interviewer Magnet!) -->
-            <div class="interactive-cache-box">
-              <div class="cache-box-header">
-                <span><i class="fa-solid fa-microchip"></i> Live Interactive Cache Simulator (Capacity = 4)</span>
-                <span class="cache-stat" id="cacheStatsText">Items: 3 / 4</span>
-              </div>
-
-              <!-- Visual Node Display -->
-              <div class="cache-visualizer" id="cacheVisualizer">
-                <!-- Dynamically populated by JS -->
-              </div>
-
-              <!-- Simulator Controls -->
-              <div class="cache-controls">
-                <div class="control-row">
-                  <input type="text" id="cacheKeyInput" placeholder="Key (e.g. NodeA)" maxlength="8" />
-                  <input type="text" id="cacheValInput" placeholder="Val (e.g. 100)" maxlength="8" />
-                  <button id="putCacheBtn" class="btn-cache-action put"><i class="fa-solid fa-plus"></i> PUT</button>
-                  <button id="getCacheBtn" class="btn-cache-action get"><i class="fa-solid fa-magnifying-glass"></i> GET</button>
-                  <button id="resetCacheBtn" class="btn-cache-action reset" title="Reset Demo"><i class="fa-solid fa-rotate-left"></i></button>
+            <!-- INTERACTIVE SIMULATOR (Live O(1) Proof) -->
+            <div class="interactive-simulator-shell">
+              <div class="sim-header">
+                <div class="sim-title">
+                  <i class="fa-solid fa-microchip"></i>
+                  <span>Live Cache Visualizer (Capacity = 4)</span>
                 </div>
-                <div class="cache-log" id="cacheLogMsg">Tip: Click <strong>PUT</strong> or <strong>GET</strong> to see O(1) MRU node promotion &amp; eviction!</div>
+                <div class="sim-counter" id="cacheStatsText">Items: 3 / 4</div>
+              </div>
+
+              <!-- Node stream visualizer -->
+              <div class="sim-node-track" id="cacheVisualizer">
+                <!-- Populated dynamically via JS -->
+              </div>
+
+              <!-- Controls -->
+              <div class="sim-controls-dock">
+                <div class="sim-inputs">
+                  <input type="text" id="cacheKeyInput" placeholder="Key (e.g. A)" maxlength="8" />
+                  <input type="text" id="cacheValInput" placeholder="Val (e.g. 50)" maxlength="8" />
+                  <button id="putCacheBtn" class="sim-btn sim-btn-put"><i class="fa-solid fa-plus"></i> PUT</button>
+                  <button id="getCacheBtn" class="sim-btn sim-btn-get"><i class="fa-solid fa-magnifying-glass"></i> GET</button>
+                  <button id="resetCacheBtn" class="sim-btn sim-btn-reset" title="Reset Demo"><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+                <div class="sim-log-readout" id="cacheLogMsg">Click <strong>PUT</strong> or <strong>GET</strong> to test O(1) MRU node promotion &amp; eviction!</div>
               </div>
             </div>
 
-            <div class="project-tags">
-              <span class="tech-tag">Java 17</span>
-              <span class="tech-tag">HashMap</span>
-              <span class="tech-tag">Doubly Linked List</span>
-              <span class="tech-tag">Strict O(1) Bounds</span>
-              <span class="tech-tag">OOP</span>
-              <span class="tech-tag">TTL Expiry</span>
-              <span class="tech-tag">Memory Tuning</span>
+            <div class="bento-tags">
+              <span class="tag">Java 17</span>
+              <span class="tag">HashMap</span>
+              <span class="tag">Doubly Linked List</span>
+              <span class="tag">Strict O(1)</span>
+              <span class="tag">TTL Expiry</span>
+              <span class="tag">OOP Architecture</span>
             </div>
           </div>
 
-          <!-- Project 2: Indian Sign Language Recognition WITH INTERACTIVE VISION HUD -->
-          <div class="project-card featured-highlight vision-card" data-category="vision">
-            <div class="project-card-header">
-              <div class="project-type-badge special-vision"><i class="fa-solid fa-camera"></i> Computer Vision &bull; LSTM Deep Learning</div>
-              <div class="project-links">
-                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+          <!-- BENTO ITEM 2: Indian Sign Language Recognition (AI / Vision Flagship) -->
+          <div class="bento-card bento-hero-right spotlight-card" data-category="vision">
+            <div class="card-glass-glow"></div>
+
+            <div class="bento-header">
+              <div class="badge-cluster">
+                <span class="category-badge ai"><i class="fa-solid fa-brain"></i> Computer Vision &amp; AI</span>
+                <span class="complexity-badge ai-badge">OpenCV + LSTM</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="link-circle" title="View Source on GitHub">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>
             </div>
 
-            <h3 class="project-title">Indian Sign Language Recognition</h3>
-            <p class="project-tagline">Real-time computer vision system processing dynamic video streams into text via 21 spatial landmarks and LSTM models.</p>
+            <h3 class="bento-title">Indian Sign Language Recognition System</h3>
+            <p class="bento-tagline">Real-time video stream ingestion pipeline extracting 21 3D spatial hand landmark vectors, feeding sequential LSTM deep learning models for live translation.</p>
 
-            <p class="project-desc">
-              Pioneered an assistive sign language recognition architecture that extracts high-frequency hand landmark vectors using <strong>Python and OpenCV</strong>, feeding them into sequential <strong>LSTM neural networks</strong> for live continuous gesture translation.
-            </p>
-
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <i class="fa-solid fa-video"></i>
-                <span><strong>Live 60 FPS Vision Ingestion:</strong> Normalized 21 spatial 3D hand keypoints extracted from live webcam streams with robust spatial noise filtering.</span>
+            <div class="bento-body-points">
+              <div class="point-row">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Real-time 60 FPS Computer Vision:</strong> OpenCV frame processing extracts and normalizes spatial hand landmark coordinates under dynamic lighting.</span>
               </div>
-              <div class="highlight-item">
-                <i class="fa-solid fa-network-wired"></i>
-                <span><strong>Sequential LSTM Temporal Modeling:</strong> Captured temporal velocity and hand movement trajectories across consecutive frames with 98%+ validation accuracy.</span>
+              <div class="point-row">
+                <i class="fa-solid fa-check"></i>
+                <span><strong>Sequential Temporal Modeling:</strong> Multi-layer LSTM neural network captures gesture velocity across frames with 98%+ validation accuracy.</span>
               </div>
             </div>
 
             <!-- INTERACTIVE GESTURE LANDMARK SIMULATOR -->
-            <div class="interactive-isl-box">
-              <div class="isl-box-header">
-                <span><i class="fa-solid fa-camera"></i> Live Vision &amp; Gesture Telemetry HUD</span>
-                <span class="isl-badge-fps" id="islFpsBadge"><i class="fa-solid fa-bolt"></i> 11ms Latency &bull; 60 FPS</span>
+            <div class="interactive-isl-shell">
+              <div class="isl-sim-header">
+                <div class="isl-sim-title">
+                  <span class="live-pulse-dot"></span>
+                  <span>Vision HUD &bull; /dev/video0 Stream</span>
+                </div>
+                <span class="isl-telemetry-badge" id="islFpsBadge"><i class="fa-solid fa-bolt"></i> 11ms &bull; 60 FPS</span>
               </div>
 
-              <div class="isl-display-area">
-                <!-- Skeletal Canvas / Mock Camera Screen -->
-                <div class="isl-screen">
-                  <div class="isl-hud-overlay">
-                    <span class="hud-tag"><span class="hud-rec-dot"></span> LIVE /dev/video0</span>
-                    <span class="hud-pts">21 LANDMARKS TRACKED</span>
+              <div class="isl-grid-viewport">
+                <!-- SVG Hand Landmark Screen -->
+                <div class="isl-canvas-wrapper">
+                  <div class="isl-hud-status">
+                    <span>21 LANDMARKS TRACKED</span>
+                    <span class="hud-green">ONLINE</span>
                   </div>
-                  <div class="isl-hand-canvas" id="islHandCanvas">
+                  <div class="isl-svg-container">
                     <svg viewBox="0 0 200 180" class="isl-hand-svg" id="islHandSvg">
                       <g class="skeleton-lines" id="skeletonLines"></g>
                       <g class="skeleton-nodes" id="skeletonNodes"></g>
                     </svg>
                   </div>
-                  <div class="isl-prediction-chip">
-                    <span class="pred-label">PREDICTED GESTURE:</span>
-                    <span class="pred-val" id="islPredictionVal">👋 HELLO / GREETING</span>
+                  <div class="isl-live-prediction">
+                    <span class="pred-label">DETECTED GESTURE</span>
+                    <span class="pred-value" id="islPredictionVal">👋 HELLO / GREETING</span>
                   </div>
                 </div>
 
-                <!-- Telemetry & Interactive Controls -->
-                <div class="isl-telemetry-panel">
-                  <div class="telemetry-stat">
-                    <div class="stat-top">
-                      <span class="stat-label">Model Confidence</span>
-                      <span class="stat-num" id="islConfidenceNum">98.6%</span>
+                <!-- Telemetry & Gesture Switcher -->
+                <div class="isl-controls-col">
+                  <div class="metric-meter-box">
+                    <div class="meter-labels">
+                      <span>Model Confidence</span>
+                      <strong id="islConfidenceNum" class="meter-val">98.6%</strong>
                     </div>
-                    <div class="confidence-bar-bg">
-                      <div class="confidence-bar-fill" id="islConfidenceBar" style="width: 98.6%;"></div>
+                    <div class="meter-track">
+                      <div class="meter-fill" id="islConfidenceBar" style="width: 98.6%;"></div>
                     </div>
                   </div>
 
-                  <div class="telemetry-info-row">
-                    <span class="t-badge"><i class="fa-solid fa-layer-group"></i> LSTM (128 Units)</span>
-                    <span class="t-badge"><i class="fa-solid fa-microchip"></i> OpenCV 4.x</span>
+                  <div class="model-spec-row">
+                    <span class="spec-chip"><i class="fa-solid fa-layer-group"></i> LSTM (128 Units)</span>
+                    <span class="spec-chip"><i class="fa-solid fa-camera"></i> OpenCV 4.x</span>
                   </div>
 
-                  <div class="gesture-selector-title">Click to Test Detected Gestures:</div>
-                  <div class="gesture-buttons-grid">
+                  <div class="gesture-selector-label">Test Gestures:</div>
+                  <div class="gesture-pill-group">
                     <button class="btn-gesture active" data-gesture="hello">👋 Hello</button>
                     <button class="btn-gesture" data-gesture="thankyou">🙏 Thank You</button>
-                    <button class="btn-gesture" data-gesture="yes">👍 Yes / OK</button>
+                    <button class="btn-gesture" data-gesture="yes">👍 Yes</button>
                     <button class="btn-gesture" data-gesture="peace">✌️ Peace</button>
                     <button class="btn-gesture" data-gesture="welcome">🤝 Welcome</button>
                   </div>
@@ -840,55 +372,305 @@
               </div>
             </div>
 
-            <div class="project-tags">
-              <span class="tech-tag">Python 3</span>
-              <span class="tech-tag">OpenCV</span>
-              <span class="tech-tag">LSTM Deep Learning</span>
-              <span class="tech-tag">Computer Vision</span>
-              <span class="tech-tag">Gesture Translation</span>
-              <span class="tech-tag">Real-Time Streams</span>
+            <div class="bento-tags">
+              <span class="tag">Python 3</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">LSTM Networks</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Stream Processing</span>
             </div>
           </div>
 
-          <!-- Project 3: Expense Tracker Web App -->
-          <div class="project-card" data-category="frontend">
-            <div class="project-card-header">
-              <div class="project-type-badge"><i class="fa-brands fa-react"></i> Full Stack Frontend &bull; SPA</div>
-              <div class="project-links">
-                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+          <!-- BENTO ITEM 3: Expense Tracker Web App (Full Stack Frontend) -->
+          <div class="bento-card bento-wide spotlight-card" data-category="frontend">
+            <div class="card-glass-glow"></div>
+
+            <div class="bento-header">
+              <div class="badge-cluster">
+                <span class="category-badge react"><i class="fa-brands fa-react"></i> Full Stack Frontend</span>
+                <span class="complexity-badge">Single Page App</span>
+              </div>
+              <div class="card-links">
+                <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="link-circle" title="View Source on GitHub">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>
             </div>
 
-            <h3 class="project-title">Expense Tracker Web App</h3>
-            <p class="project-tagline">Dynamic Single Page Application (SPA) for real-time financial tracking, expense breakdowns, and budgeting analytics.</p>
+            <div class="wide-card-grid">
+              <div class="wide-card-text">
+                <h3 class="bento-title">Expense Tracker Web App</h3>
+                <p class="bento-tagline">High-responsiveness financial management Single Page Application (SPA) designed to log, categorize, and visually breakdown income and expenditures with instant state synchronization.</p>
 
-            <p class="project-desc">
-              Developed a high-responsiveness transaction tracking SPA using <strong>React.js</strong> to help users log, categorize, and visually breakdown income and expenditures with instant state recalculations.
-            </p>
+                <div class="bento-body-points">
+                  <div class="point-row">
+                    <i class="fa-solid fa-check"></i>
+                    <span><strong>Predictable State Management:</strong> Centralized React hooks architecture ensuring atomic updates across income and expense ledgers.</span>
+                  </div>
+                  <div class="point-row">
+                    <i class="fa-solid fa-check"></i>
+                    <span><strong>Mobile-First UI &amp; Accessibility:</strong> Modern CSS3 Flexbox/Grid and Bootstrap 5 ensuring fluid responsiveness across all screen sizes.</span>
+                  </div>
+                </div>
 
-            <div class="project-highlights">
-              <div class="highlight-item">
-                <i class="fa-solid fa-layer-group"></i>
-                <span><strong>Predictable State Management:</strong> Leveraged centralized React state and modular UI components for seamless synchronous updates across devices.</span>
+                <div class="bento-tags">
+                  <span class="tag">React.js</span>
+                  <span class="tag">JavaScript (ES6+)</span>
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">Bootstrap 5</span>
+                  <span class="tag">SPA Architecture</span>
+                </div>
               </div>
-              <div class="highlight-item">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <span><strong>Mobile-First Responsive Styling:</strong> Built with modern CSS3 and Bootstrap to guarantee fast loading, accessibility, and fluid layouts.</span>
+
+              <!-- Visual Representation / Mini Preview -->
+              <div class="wide-card-preview">
+                <div class="mini-app-mock">
+                  <div class="mock-topbar">
+                    <span class="mock-circle r"></span>
+                    <span class="mock-circle y"></span>
+                    <span class="mock-circle g"></span>
+                    <span class="mock-title">ExpenseTracker.tsx</span>
+                  </div>
+                  <div class="mock-stats-row">
+                    <div class="stat-pill balance">
+                      <span>Total Balance</span>
+                      <strong>$4,850.00</strong>
+                    </div>
+                    <div class="stat-pill income">
+                      <span>Income</span>
+                      <strong>+$6,200.00</strong>
+                    </div>
+                    <div class="stat-pill expense">
+                      <span>Expenses</span>
+                      <strong>-$1,350.00</strong>
+                    </div>
+                  </div>
+                  <div class="mock-transactions">
+                    <div class="tx-item"><span>Cloud Hosting</span><span class="neg">-$45.00</span></div>
+                    <div class="tx-item"><span>Freelance Stipend</span><span class="pos">+$1,200.00</span></div>
+                    <div class="tx-item"><span>Office Equipment</span><span class="neg">-$120.00</span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="project-tags">
-              <span class="tech-tag">React.js</span>
-              <span class="tech-tag">JavaScript (ES6+)</span>
-              <span class="tech-tag">HTML5</span>
-              <span class="tech-tag">CSS3</span>
-              <span class="tech-tag">Bootstrap</span>
-              <span class="tech-tag">Single Page App</span>
-              <span class="tech-tag">State Management</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION (ELEVATED SUMMER INTERNSHIP & ML INTERNSHIP) -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker"><i class="fa-solid fa-briefcase"></i> Work History</span>
+          <h2 class="section-title">Industry <span class="gradient-text">Experience</span></h2>
+          <p class="section-desc">Production exposure architecting concurrent backend pipelines and applying deep learning to live streams.</p>
+        </div>
+
+        <div class="experience-timeline">
+          
+          <!-- Summer Internship: Six Phrase -->
+          <div class="timeline-card summer-highlight spotlight-card">
+            <div class="timeline-icon-box summer-icon">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <div>
+                  <div class="company-row">
+                    <h3 class="company-name">Six Phrase Education Institutions</h3>
+                    <span class="summer-pill"><i class="fa-solid fa-sun"></i> Summer Internship 2025</span>
+                  </div>
+                  <h4 class="role-name">Java Backend Summer Intern</h4>
+                  <div class="location-text"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu, India &bull; Enterprise Backend Systems</div>
+                </div>
+                <div class="timeline-date-pill">
+                  <i class="fa-regular fa-calendar"></i> May 2025 &ndash; Jun 2025
+                </div>
+              </div>
+
+              <p class="role-overview">
+                Engineered core backend services in <strong>Core Java</strong> focused on optimizing bulk data ingestion throughput, connection pooling, and low-level data structure memory footprints.
+              </p>
+
+              <div class="achievement-grid">
+                <div class="achievement-card">
+                  <i class="fa-solid fa-arrows-split-up-and-left"></i>
+                  <div>
+                    <strong>Multithreaded Ingestion Architecture:</strong> Designed a concurrent ingestion pipeline that batches records across worker threads, minimizing database locks and cutting bulk loading latency.
+                  </div>
+                </div>
+                <div class="achievement-card">
+                  <i class="fa-solid fa-database"></i>
+                  <div>
+                    <strong>JDBC Pooling &amp; Query Optimization:</strong> Structured normalized relational access objects and connection pool configurations ensuring strict ACID compliance under heavy load.
+                  </div>
+                </div>
+                <div class="achievement-card">
+                  <i class="fa-solid fa-microchip"></i>
+                  <div>
+                    <strong>Data Structure Tuning:</strong> Re-engineered in-memory collections and custom indexing to optimize heap utilization during high-volume record processing.
+                  </div>
+                </div>
+                <div class="achievement-card">
+                  <i class="fa-solid fa-vial-circle-check"></i>
+                  <div>
+                    <strong>Automated Test Automation:</strong> Authored comprehensive unit tests using JUnit, enforcing clean modular OOP design and zero regressions.
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-row">
+                <span class="stack-badge summer"><i class="fa-solid fa-star"></i> Summer Internship</span>
+                <span class="stack-badge">Java 17</span>
+                <span class="stack-badge">Multithreading</span>
+                <span class="stack-badge">JDBC Pooling</span>
+                <span class="stack-badge">Data Structure Tuning</span>
+                <span class="stack-badge">JUnit</span>
+                <span class="stack-badge">MySQL</span>
+              </div>
             </div>
           </div>
+
+          <!-- Machine Learning Internship: Hexart.In -->
+          <div class="timeline-card spotlight-card">
+            <div class="timeline-icon-box ai-icon">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header-row">
+                <div>
+                  <div class="company-row">
+                    <h3 class="company-name">Hexart.In</h3>
+                    <span class="ai-pill"><i class="fa-solid fa-brain"></i> Applied AI &amp; Vision</span>
+                  </div>
+                  <h4 class="role-name">Machine Learning Intern</h4>
+                  <div class="location-text"><i class="fa-solid fa-location-dot"></i> Applied AI &bull; Computer Vision &amp; Deep Learning</div>
+                </div>
+                <div class="timeline-date-pill">
+                  <i class="fa-regular fa-calendar"></i> Dec 2025 &ndash; Apr 2026
+                </div>
+              </div>
+
+              <p class="role-overview">
+                Spearheaded the development of a real-time assistive <strong>Indian Sign Language (ISL) recognition system</strong> converting dynamic webcam feeds into text in real time.
+              </p>
+
+              <div class="achievement-grid">
+                <div class="achievement-card">
+                  <i class="fa-solid fa-video"></i>
+                  <div>
+                    <strong>Real-Time OpenCV Pipeline:</strong> Designed frame-capture and spatial preprocessing workflows isolating 21 hand keypoint vectors at 60 FPS.
+                  </div>
+                </div>
+                <div class="achievement-card">
+                  <i class="fa-solid fa-network-wired"></i>
+                  <div>
+                    <strong>Sequential LSTM Deep Learning:</strong> Trained multi-layer recurrent neural networks on continuous frame sequences to capture gesture kinematics with 98%+ accuracy.
+                  </div>
+                </div>
+                <div class="achievement-card">
+                  <i class="fa-solid fa-gauge-high"></i>
+                  <div>
+                    <strong>Low Latency Inference:</strong> Streamlined tensor transformations to achieve instantaneous gesture prediction (&lt;12ms per frame) on standard consumer hardware.
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-stack-row">
+                <span class="stack-badge">Python</span>
+                <span class="stack-badge">OpenCV</span>
+                <span class="stack-badge">LSTM Neural Networks</span>
+                <span class="stack-badge">Computer Vision</span>
+                <span class="stack-badge">Temporal Modeling</span>
+                <span class="stack-badge">Real-Time Streams</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker"><i class="fa-solid fa-microchip"></i> Technical Capabilities</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+          <p class="section-desc">Practical proficiency across backend enterprise frameworks, computer science fundamentals, and developer tools.</p>
+        </div>
+
+        <div class="skills-matrix">
+          
+          <!-- Category 1: Backend & Enterprise -->
+          <div class="skill-group spotlight-card">
+            <div class="skill-group-header">
+              <div class="grp-icon"><i class="fa-solid fa-server"></i></div>
+              <h3>Backend &amp; Enterprise</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="chip highlight"><i class="fa-brands fa-java"></i><span>Java (Core &amp; Advanced)</span></div>
+              <div class="chip highlight"><i class="fa-solid fa-leaf"></i><span>Spring Boot</span></div>
+              <div class="chip"><i class="fa-solid fa-database"></i><span>Spring Data JPA / Hibernate</span></div>
+              <div class="chip"><i class="fa-solid fa-shield"></i><span>Spring Security &amp; JWT</span></div>
+              <div class="chip"><i class="fa-solid fa-network-wired"></i><span>RESTful Web Services</span></div>
+              <div class="chip"><i class="fa-brands fa-python"></i><span>Python</span></div>
+              <div class="chip"><i class="fa-solid fa-cubes"></i><span>Microservices (Basics)</span></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Core Computer Science -->
+          <div class="skill-group spotlight-card">
+            <div class="skill-group-header">
+              <div class="grp-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Core Computer Science</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="chip highlight"><i class="fa-solid fa-sitemap"></i><span>Data Structures &amp; Algorithms</span></div>
+              <div class="chip highlight"><i class="fa-solid fa-bolt"></i><span>O(1) Memory Architecture</span></div>
+              <div class="chip"><i class="fa-solid fa-arrows-split-up-and-left"></i><span>Multithreading &amp; Concurrency</span></div>
+              <div class="chip"><i class="fa-solid fa-cubes"></i><span>Object-Oriented Programming (OOP)</span></div>
+              <div class="chip"><i class="fa-solid fa-diagram-project"></i><span>DBMS &amp; Relational Normalization</span></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Frontend Technologies -->
+          <div class="skill-group spotlight-card">
+            <div class="skill-group-header">
+              <div class="grp-icon"><i class="fa-brands fa-react"></i></div>
+              <h3>Frontend Technologies</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="chip highlight"><i class="fa-brands fa-react"></i><span>React.js (SPA)</span></div>
+              <div class="chip"><i class="fa-brands fa-js"></i><span>JavaScript (ES6+)</span></div>
+              <div class="chip"><i class="fa-brands fa-html5"></i><span>HTML5 Semantic Web</span></div>
+              <div class="chip"><i class="fa-brands fa-css3-alt"></i><span>Modern CSS3 &amp; Flex/Grid</span></div>
+              <div class="chip"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap 5</span></div>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases & Tools -->
+          <div class="skill-group spotlight-card">
+            <div class="skill-group-header">
+              <div class="grp-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <h3>Databases &amp; Dev Workflow</h3>
+            </div>
+            <div class="skill-chips-wrap">
+              <div class="chip highlight"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+              <div class="chip"><i class="fa-solid fa-plug"></i><span>JDBC</span></div>
+              <div class="chip highlight"><i class="fa-brands fa-git-alt"></i><span>Git &amp; GitHub</span></div>
+              <div class="chip"><i class="fa-solid fa-box-archive"></i><span>Maven</span></div>
+              <div class="chip"><i class="fa-solid fa-code"></i><span>IntelliJ IDEA &amp; Eclipse</span></div>
+              <div class="chip"><i class="fa-solid fa-vial"></i><span>JUnit</span></div>
+              <div class="chip"><i class="fa-solid fa-paper-plane"></i><span>Postman</span></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -896,182 +678,188 @@
     <!-- EDUCATION & CERTIFICATIONS -->
     <section class="section education-section" id="education">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Background</span>
+        <div class="section-heading">
+          <span class="section-kicker"><i class="fa-solid fa-graduation-cap"></i> Academics &amp; Credentials</span>
           <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
-          <p class="section-subtitle">Consistent academic excellence backed by recognized technical credentials.</p>
+          <p class="section-desc">Strong mathematical and algorithmic foundation supported by certified training.</p>
         </div>
 
         <div class="edu-grid">
-          <!-- Degree Education -->
-          <div class="edu-card">
-            <div class="edu-header">
+          <div class="edu-card spotlight-card">
+            <div class="edu-top">
               <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
-              <div class="edu-period">2022 &ndash; 2026</div>
+              <span class="edu-years">2022 &ndash; 2026</span>
             </div>
-            <h3 class="edu-title">Bachelor of Technology in Computer Science &amp; Engineering</h3>
-            <div class="edu-institution">G. Pulla Reddy Engineering College, Kurnool</div>
-            <div class="edu-score">
-              <span class="score-label">Cumulative GPA:</span>
-              <span class="score-pill">7.41 / 10.0</span>
+            <h3 class="edu-degree">Bachelor of Technology in Computer Science &amp; Engineering</h3>
+            <div class="edu-school">G. Pulla Reddy Engineering College, Kurnool</div>
+            <div class="edu-gpa">
+              <span>CGPA:</span>
+              <strong class="gpa-badge">7.41 / 10.0</strong>
             </div>
-            <p class="edu-desc">
-              Comprehensive coursework encompassing Data Structures, Algorithms, Object-Oriented Software Design, Operating Systems, Computer Networks, and Database Management Systems.
+            <p class="edu-details">
+              Core curriculum: Data Structures, Advanced Algorithms, Operating Systems, Computer Networks, Database Management Systems, and Object-Oriented Software Engineering.
             </p>
           </div>
 
-          <!-- Intermediate Education -->
-          <div class="edu-card">
-            <div class="edu-header">
+          <div class="edu-card spotlight-card">
+            <div class="edu-top">
               <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
-              <div class="edu-period">2020 &ndash; 2022</div>
+              <span class="edu-years">2020 &ndash; 2022</span>
             </div>
-            <h3 class="edu-title">Intermediate (MPC &ndash; Mathematics, Physics, Chemistry)</h3>
-            <div class="edu-institution">Sri Chaitanya Junior College, Kurnool</div>
-            <div class="edu-score">
-              <span class="score-label">Cumulative GPA:</span>
-              <span class="score-pill">8.47 / 10.0</span>
+            <h3 class="edu-degree">Intermediate (MPC &ndash; Maths, Physics, Chemistry)</h3>
+            <div class="edu-school">Sri Chaitanya Junior College, Kurnool</div>
+            <div class="edu-gpa">
+              <span>CGPA:</span>
+              <strong class="gpa-badge">8.47 / 10.0</strong>
             </div>
-            <p class="edu-desc">
-              Strong grounding in analytical mathematics, logical reasoning, and scientific methodology.
+            <p class="edu-details">
+              Rigorous foundation in analytical mathematics, discrete problem solving, physics, and computational logic.
             </p>
           </div>
         </div>
 
         <!-- Certifications Row -->
-        <div class="certifications-block">
-          <h3 class="cert-title"><i class="fa-solid fa-certificate"></i> Verified Industry Certifications</h3>
-          <div class="cert-grid">
-            <div class="cert-card">
-              <div class="cert-badge-icon infosys"><i class="fa-brands fa-java"></i></div>
-              <div class="cert-info">
-                <h4>Foundation Certificate in Java</h4>
-                <div class="cert-issuer">Infosys Springboard</div>
-                <p>Validated core Java programming, object-oriented principles, exception handling, and data structure usage.</p>
+        <div class="certs-container">
+          <h3 class="certs-headline"><i class="fa-solid fa-certificate"></i> Verified Industry Credentials</h3>
+          <div class="certs-grid">
+            
+            <div class="cert-item spotlight-card">
+              <div class="cert-logo-box infosys">
+                <i class="fa-brands fa-java"></i>
               </div>
-              <div class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</div>
+              <div class="cert-meta">
+                <h4>Foundation Certificate in Java</h4>
+                <div class="cert-provider">Infosys Springboard</div>
+                <p>Validated enterprise Java fundamentals, OOP design patterns, multithreaded programming, and collection frameworks.</p>
+              </div>
+              <span class="verified-pill"><i class="fa-solid fa-circle-check"></i> Verified</span>
             </div>
 
-            <div class="cert-card">
-              <div class="cert-badge-icon google"><i class="fa-brands fa-google"></i></div>
-              <div class="cert-info">
-                <h4>Google Cloud Data Analytics Certificate</h4>
-                <div class="cert-issuer">Google Cloud</div>
-                <p>Equipped with cloud data fundamentals, query pipelines, and structured analytics on distributed infrastructure.</p>
+            <div class="cert-item spotlight-card">
+              <div class="cert-logo-box google">
+                <i class="fa-brands fa-google"></i>
               </div>
-              <div class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</div>
+              <div class="cert-meta">
+                <h4>Google Cloud Data Analytics Certificate</h4>
+                <div class="cert-provider">Google Cloud</div>
+                <p>Certified in cloud database querying, data ingestion pipelines, and distributed analytics architecture.</p>
+              </div>
+              <span class="verified-pill"><i class="fa-solid fa-circle-check"></i> Verified</span>
             </div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT / HIRE ME SECTION -->
+    <!-- CONTACT SECTION -->
     <section class="section contact-section" id="contact">
       <div class="container">
-        <div class="section-header">
-          <span class="section-tag"><i class="fa-solid fa-handshake"></i> Let's Connect</span>
+        <div class="section-heading">
+          <span class="section-kicker"><i class="fa-solid fa-paper-plane"></i> Let's Connect</span>
           <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
-          <p class="section-subtitle">Interested in collaborating or hiring? I'm available for full-time Software Engineer positions.</p>
+          <p class="section-desc">Currently open to Software Engineer opportunities, interviews, and impactful technical collaborations.</p>
         </div>
 
-        <div class="contact-grid">
-          <!-- Left: Direct Info Cards -->
-          <div class="contact-info-column">
-            <h3 class="contact-card-title">Contact Channels</h3>
-            <p class="contact-intro">Feel free to reach out directly via email, phone, or LinkedIn. I typically respond within 24 hours.</p>
+        <div class="contact-card-box spotlight-card">
+          <div class="contact-columns">
+            
+            <!-- Left Column: Direct Links -->
+            <div class="contact-left-col">
+              <h3 class="contact-col-title">Direct Contact Channels</h3>
+              <p class="contact-col-desc">I typically respond within 24 hours. Feel free to call, email, or message on LinkedIn.</p>
 
-            <div class="contact-detail-card" id="emailCard">
-              <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
-              <div class="detail-content">
-                <span class="detail-label">Email Address</span>
-                <a href="mailto:mahe3759@gmail.com" class="detail-val">mahe3759@gmail.com</a>
-              </div>
-              <button class="btn-copy" id="copyEmailBtn" title="Copy Email to Clipboard">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-
-            <div class="contact-detail-card" id="phoneCard">
-              <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
-              <div class="detail-content">
-                <span class="detail-label">Phone Number</span>
-                <a href="tel:+919703847338" class="detail-val">+91 9703847338</a>
-              </div>
-              <button class="btn-copy" id="copyPhoneBtn" title="Copy Phone to Clipboard">
-                <i class="fa-regular fa-copy"></i>
-              </button>
-            </div>
-
-            <div class="contact-detail-card">
-              <div class="detail-icon"><i class="fa-brands fa-linkedin"></i></div>
-              <div class="detail-content">
-                <span class="detail-label">LinkedIn Profile</span>
-                <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" class="detail-val">linkedin.com/in/Mahesh-k</a>
-              </div>
-              <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn-copy" title="Open LinkedIn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-
-            <div class="contact-detail-card">
-              <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
-              <div class="detail-content">
-                <span class="detail-label">GitHub Repository</span>
-                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="detail-val">github.com/Mahesh-k</a>
-              </div>
-              <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn-copy" title="Open GitHub">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-
-            <!-- Resume Download Card -->
-            <div class="resume-download-box">
-              <div class="resume-meta">
-                <i class="fa-solid fa-file-pdf"></i>
-                <div>
-                  <h4>Kammari_Mahesh_Resume.pdf</h4>
-                  <span>Full Stack Java &amp; Software Engineering</span>
+              <div class="channel-card">
+                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="channel-info">
+                  <span class="ch-label">Email Address</span>
+                  <a href="mailto:mahe3759@gmail.com" class="ch-val">mahe3759@gmail.com</a>
                 </div>
+                <button class="ch-btn-copy" id="copyContactEmail" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
               </div>
-              <button class="btn btn-primary btn-sm" id="downloadResumeBtn" onclick="window.print()">
-                <i class="fa-solid fa-print"></i> Print / Save Portfolio
-              </button>
-            </div>
-          </div>
 
-          <!-- Right: Interactive Quick Message Box -->
-          <div class="contact-form-column">
-            <div class="form-wrapper">
-              <h3 class="form-title"><i class="fa-regular fa-paper-plane"></i> Quick Message</h3>
-              <p class="form-subtitle">Send a quick inquiry directly to my inbox:</p>
-              
-              <form id="contactForm" class="contact-form">
-                <div class="form-group">
-                  <label for="senderName">Your Name</label>
-                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Hiring Manager / John Doe" required />
+              <div class="channel-card">
+                <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="channel-info">
+                  <span class="ch-label">Phone Number</span>
+                  <a href="tel:+919703847338" class="ch-val">+91 9703847338</a>
                 </div>
+                <button class="ch-btn-copy" id="copyContactPhone" title="Copy Phone">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
 
-                <div class="form-group">
-                  <label for="senderEmail">Your Email</label>
-                  <input type="email" id="senderEmail" class="form-input" placeholder="e.g. name@company.com" required />
+              <div class="channel-card">
+                <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="channel-info">
+                  <span class="ch-label">LinkedIn Profile</span>
+                  <a href="https://www.linkedin.com/in/mahesh-kammari-295802376/" target="_blank" rel="noopener noreferrer" class="ch-val">linkedin.com/in/mahesh-kammari-295802376/</a>
+                </div>
+                <a href="https://www.linkedin.com/in/mahesh-kammari-295802376/" target="_blank" rel="noopener noreferrer" class="ch-btn-copy" title="Open LinkedIn">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="channel-card">
+                <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="channel-info">
+                  <span class="ch-label">GitHub Repository</span>
+                  <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="ch-val">github.com/maheshk3</a>
+                </div>
+                <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" class="ch-btn-copy" title="Open GitHub">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+
+              <div class="resume-cta-card">
+                <div class="cta-left">
+                  <i class="fa-solid fa-file-pdf"></i>
+                  <div>
+                    <h4>Print / Save Executive Portfolio</h4>
+                    <span>Clean black &amp; white printer-ready layout</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-sm" onclick="window.print()">
+                  <i class="fa-solid fa-print"></i> Print PDF
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Column: Quick Contact Form -->
+            <div class="contact-right-col">
+              <h3 class="contact-col-title"><i class="fa-regular fa-paper-plane"></i> Quick Message</h3>
+              <p class="contact-col-desc">Drop a note and it will automatically draft into your email client:</p>
+
+              <form id="contactForm" class="clean-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="senderName">Your Name</label>
+                    <input type="text" id="senderName" class="form-control" placeholder="e.g. Hiring Manager / Recruiter" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="senderEmail">Your Email</label>
+                    <input type="email" id="senderEmail" class="form-control" placeholder="e.g. name@company.com" required />
+                  </div>
                 </div>
 
                 <div class="form-group">
                   <label for="senderSubject">Subject</label>
-                  <input type="text" id="senderSubject" class="form-input" placeholder="e.g. Software Engineer Opportunity" required />
+                  <input type="text" id="senderSubject" class="form-control" placeholder="e.g. Software Engineer Opportunity" required />
                 </div>
 
                 <div class="form-group">
                   <label for="senderMessage">Message</label>
-                  <textarea id="senderMessage" class="form-input" rows="4" placeholder="Hello Mahesh, we reviewed your portfolio and would like to invite you for an interview..." required></textarea>
+                  <textarea id="senderMessage" class="form-control" rows="4" placeholder="Hello Mahesh, we reviewed your projects and would like to discuss a role..." required></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-block">
+                <button type="submit" class="btn btn-primary btn-full">
                   <i class="fa-solid fa-paper-plane"></i> Send Direct Email
                 </button>
               </form>
             </div>
+
           </div>
         </div>
       </div>
@@ -1080,48 +868,42 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <a href="#hero" class="brand-logo footer-logo">
-          <span class="logo-bracket">&lt;</span>
-          <span class="logo-text">Mahesh</span>
-          <span class="logo-accent">.dev</span>
-          <span class="logo-bracket">/&gt;</span>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-badge">
+          <span class="brand-monogram">KM</span>
+          <span class="brand-name">Kammari Mahesh</span>
         </a>
-        <p class="footer-copy">
-          &copy; 2026 Kammari Mahesh. Designed with high attention to clean architecture, performance, and accessibility.
+        <p class="footer-motto">
+          Engineering scalable systems with attention to algorithmic precision, memory bounds, and modern user experiences.
         </p>
       </div>
 
-      <div class="footer-center">
-        <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </div>
+      <div class="footer-links-group">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
       </div>
 
-      <div class="footer-right">
-        <div class="footer-socials">
-          <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="mailto:mahe3759@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-          <a href="tel:+919703847338" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
-        </div>
-        <button id="backToTopBtn" class="back-to-top" title="Scroll to Top">
+      <div class="footer-social-group">
+        <a href="https://github.com/maheshk3" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mahesh-kammari-295802376/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:mahe3759@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+919703847338" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        <button id="backToTopBtn" class="back-top-btn" title="Back to top">
           <i class="fa-solid fa-arrow-up"></i>
         </button>
       </div>
     </div>
   </footer>
 
-  <!-- Toast Notification Container -->
-  <div id="toast" class="toast" role="alert" aria-live="polite">
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="alert">
     <i class="fa-solid fa-circle-check toast-icon"></i>
-    <span id="toastMsg" class="toast-msg">Copied to clipboard!</span>
+    <span id="toastMsg">Copied to clipboard!</span>
   </div>
 
   <!-- JavaScript -->
