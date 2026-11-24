@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kammari Mahesh - Full Stack Java & Software Engineer Portfolio. Specializing in Spring Boot, RESTful APIs, high-performance algorithms, and scalable web architectures." />
+  <meta name="keywords" content="Kammari Mahesh, Software Engineer, Java Developer, Spring Boot, Full Stack, Portfolio, Computer Science, G Pulla Reddy Engineering College" />
+  <meta name="author" content="Kammari Mahesh" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Kammari Mahesh | Software Engineer & Full Stack Java Developer" />
+  <meta property="og:description" content="Portfolio of Kammari Mahesh - Computer Science graduate specializing in Full Stack Java, Spring Boot, REST APIs, and High-Performance Systems." />
+  <meta property="og:type" content="website" />
+
+  <title>Kammari Mahesh | Software Engineer & Full Stack Java Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='62%' font-size='50' font-family='monospace' font-weight='bold' fill='%2310b981' text-anchor='middle'>&lt;M/&gt;</text></svg>" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-decorations">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Kammari Mahesh Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Mahesh</span>
+        <span class="logo-accent">.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-code"></i> Projects</a>
+        <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+        <a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </nav>
+
+      <!-- Action items -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <a href="#contact" class="btn btn-outline btn-sm hire-btn">
+          <span>Hire Me</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Badge -->
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Software Engineer Roles &bull; 2026 Grad</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Kammari Mahesh</span>
+          </h1>
+
+          <div class="hero-typewriter">
+            <span class="type-prefix">I specialize in </span>
+            <span class="type-text" id="typewriterText"></span>
+            <span class="type-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Computer Science undergraduate at <strong>G. Pulla Reddy Engineering College</strong> with deep expertise in <strong>Core Java, Spring Boot, RESTful APIs, and Database Architectures</strong>. Driven by solving complex problems with strictly optimized $O(1)$ algorithms and building resilient, secure backend systems.
+          </p>
+
+          <!-- Quick Action Buttons -->
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-cubes"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-regular fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+            <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+
+          <!-- Quick Contact Badges -->
+          <div class="hero-contact-strip">
+            <a href="mailto:mahe3759@gmail.com" class="contact-pill" title="Send email">
+              <i class="fa-solid fa-envelope"></i>
+              <span>mahe3759@gmail.com</span>
+            </a>
+            <a href="tel:+919703847338" class="contact-pill" title="Call">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 9703847338</span>
+            </a>
+            <span class="contact-pill location">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Kurnool, AP, India</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero Dev Terminal Card -->
+        <div class="hero-terminal-wrapper">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">mahesh@dev-workstation:~ (bash)</div>
+              <div class="terminal-actions">
+                <button class="terminal-copy-btn" id="copySnippetBtn" title="Copy developer profile">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+            <div class="terminal-body">
+              <div class="term-line">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">curl -s https://api.kammari-mahesh.dev/profile.json</span>
+              </div>
+              <pre class="term-output"><code>{
+  <span class="json-key">"name"</span>: <span class="json-str">"Kammari Mahesh"</span>,
+  <span class="json-key">"role"</span>: <span class="json-str">"Full Stack Java &amp; Spring Boot Engineer"</span>,
+  <span class="json-key">"college"</span>: <span class="json-str">"G. Pulla Reddy Engineering College"</span>,
+  <span class="json-key">"graduation"</span>: <span class="json-num">2026</span>,
+  <span class="json-key">"core_focus"</span>: [
+    <span class="json-str">"Spring Boot / Microservices"</span>,
+    <span class="json-str">"Strict O(1) Cache Architecture"</span>,
+    <span class="json-str">"JWT &amp; Spring Security"</span>,
+    <span class="json-str">"High-Concurrency Ingestion"</span>
+  ],
+  <span class="json-key">"status"</span>: <span class="json-str">"Ready for high-impact opportunities 🚀"</span>
+}</code></pre>
+              <div class="term-interactive">
+                <div class="term-line">
+                  <span class="term-prompt">$</span>
+                  <span class="term-active-cmd" id="termCurrentCmd">system.checkReadiness()</span>
+                </div>
+                <div class="term-badge-feedback">
+                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> Java 17+</span>
+                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> Spring Boot</span>
+                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> Data Structures</span>
+                  <span class="pill-mini green"><i class="fa-solid fa-check"></i> React.js</span>
+                </div>
+              </div>
+            </div>
+            <div class="terminal-footer">
+              <span class="term-hint"><i class="fa-solid fa-terminal"></i> Proactive Problem Solver</span>
+              <span class="term-badge">Status: 200 OK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS STRIP -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-microchip"></i></div>
+            <div class="metric-value">O(1)</div>
+            <div class="metric-label">Cache Complexity Engineered</div>
+            <div class="metric-sub">Strict LRU eviction &amp; TTL</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-building-columns"></i></div>
+            <div class="metric-value">7.41</div>
+            <div class="metric-label">B.Tech CGPA</div>
+            <div class="metric-sub">Computer Science &amp; Engg</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="metric-value">2+</div>
+            <div class="metric-label">Industry Internships</div>
+            <div class="metric-sub">Backend (Java) &amp; ML (Vision)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="metric-value">100%</div>
+            <div class="metric-label">Secure Architecture</div>
+            <div class="metric-sub">JWT &amp; Role-Based Security</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> Professional Profile</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Bridging robust backend engineering with thoughtful modern web experiences.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <h3 class="narrative-heading">
+              Engineering reliable, high-performance systems from the ground up.
+            </h3>
+            <p>
+              I am a final-year <strong>Computer Science &amp; Engineering</strong> student at <strong>G. Pulla Reddy Engineering College, Kurnool</strong> (2022–2026). My technical passion lies at the intersection of <strong>Full Stack Java development, Spring Boot architectures</strong>, and rigorous core computer science fundamentals.
+            </p>
+            <p>
+              Unlike surface-level developers, I take pride in understanding what happens under the hood—from optimizing <strong>multithreaded bulk data ingestion</strong> during my backend internship to crafting a <strong>zero-dependency LRU cache</strong> with strict $O(1)$ operations and custom doubly linked lists.
+            </p>
+            <p>
+              My goal is to join a forward-thinking engineering team where I can architect scalable RESTful APIs, contribute clean and maintainable code, and solve meaningful computational challenges.
+            </p>
+
+            <div class="about-key-points">
+              <div class="point-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <strong>Backend First Philosophy:</strong> Designing idempotent REST APIs with Spring Boot, Spring Data JPA, and normalized MySQL schemas.
+                </div>
+              </div>
+              <div class="point-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <strong>Algorithmic Thinking:</strong> Deep practice in Data Structures, Algorithms, HashMaps, Linked Lists, and Object-Oriented design patterns.
+                </div>
+              </div>
+              <div class="point-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <div>
+                  <strong>Versatile &amp; Curious:</strong> Hands-on experience across React frontends and Machine Learning computer vision pipelines (OpenCV + LSTM).
+                </div>
+              </div>
+            </div>
+
+            <div class="about-cta-row">
+              <a href="#contact" class="btn btn-primary">
+                <i class="fa-solid fa-handshake"></i> Let's Talk
+              </a>
+              <a href="#experience" class="btn btn-outline">
+                <i class="fa-solid fa-timeline"></i> Review My Track Record
+              </a>
+            </div>
+          </div>
+
+          <div class="about-cards-column">
+            <div class="feature-card">
+              <div class="feat-icon"><i class="fa-brands fa-java"></i></div>
+              <div class="feat-content">
+                <h4>Full Stack Java &amp; Spring Boot</h4>
+                <p>Enterprise-grade backend services with Spring Data JPA, Hibernate, JWT authorization, and Spring Security.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feat-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="feat-content">
+                <h4>High-Performance Systems</h4>
+                <p>Engineered low-latency in-memory caching mechanisms and multithreaded concurrent pipelines.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feat-icon"><i class="fa-brands fa-react"></i></div>
+              <div class="feat-content">
+                <h4>Modern Frontend (React)</h4>
+                <p>Dynamic, responsive Single Page Applications (SPAs) with state management, clean CSS, and accessibility.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feat-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="feat-content">
+                <h4>Applied Machine Learning</h4>
+                <p>Computer Vision workflows utilizing OpenCV and sequential LSTM neural networks for gesture recognition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-terminal"></i> Technical Stack</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+          <p class="section-subtitle">Categorized breakdown of the languages, frameworks, and developer tools in my daily toolkit.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Backend & Enterprise -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-server"></i></div>
+              <div>
+                <h3 class="cat-title">Backend &amp; Enterprise</h3>
+                <span class="cat-subtitle">Core Java &amp; Frameworks</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-chip">
+                <i class="fa-brands fa-java"></i>
+                <span class="skill-name">Java</span>
+                <span class="skill-lvl">Core &amp; Advanced</span>
+              </div>
+              <div class="skill-chip highlight">
+                <i class="fa-solid fa-leaf"></i>
+                <span class="skill-name">Spring Boot</span>
+                <span class="skill-lvl">Microservices</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-database"></i>
+                <span class="skill-name">Spring Data JPA</span>
+                <span class="skill-lvl">Hibernate ORM</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-shield"></i>
+                <span class="skill-name">Spring Security</span>
+                <span class="skill-lvl">JWT Auth</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-network-wired"></i>
+                <span class="skill-name">RESTful APIs</span>
+                <span class="skill-lvl">Web Services</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-python"></i>
+                <span class="skill-name">Python</span>
+                <span class="skill-lvl">Scripting &amp; ML</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core Computer Science -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+              <div>
+                <h3 class="cat-title">Core Computer Science</h3>
+                <span class="cat-subtitle">Foundations &amp; Architecture</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-chip highlight">
+                <i class="fa-solid fa-sitemap"></i>
+                <span class="skill-name">Data Structures</span>
+                <span class="skill-lvl">Trees, Maps, Lists</span>
+              </div>
+              <div class="skill-chip highlight">
+                <i class="fa-solid fa-bolt"></i>
+                <span class="skill-name">Algorithms</span>
+                <span class="skill-lvl">Time/Space Optimization</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-cubes"></i>
+                <span class="skill-name">OOP Principles</span>
+                <span class="skill-lvl">Clean Architecture</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span class="skill-name">DBMS Concepts</span>
+                <span class="skill-lvl">Normalization &amp; ACID</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-arrows-spin"></i>
+                <span class="skill-name">Multithreading</span>
+                <span class="skill-lvl">Concurrency &amp; Threads</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases & Persistence -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+              <div>
+                <h3 class="cat-title">Databases &amp; Persistence</h3>
+                <span class="cat-subtitle">Storage &amp; Data Integration</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-chip highlight">
+                <i class="fa-solid fa-table"></i>
+                <span class="skill-name">MySQL</span>
+                <span class="skill-lvl">Relational Schemas</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-plug"></i>
+                <span class="skill-name">JDBC</span>
+                <span class="skill-lvl">Connection Pooling</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-filter"></i>
+                <span class="skill-name">SQL Queries</span>
+                <span class="skill-lvl">Indexing &amp; Joins</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-memory"></i>
+                <span class="skill-name">In-Memory Cache</span>
+                <span class="skill-lvl">LRU &amp; TTL Eviction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend Technologies -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-brands fa-react"></i></div>
+              <div>
+                <h3 class="cat-title">Frontend Technologies</h3>
+                <span class="cat-subtitle">Client-Side Engineering</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-chip highlight">
+                <i class="fa-brands fa-react"></i>
+                <span class="skill-name">React.js</span>
+                <span class="skill-lvl">Hooks &amp; Components</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-js"></i>
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-lvl">ES6+, Async/Await</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-html5"></i>
+                <span class="skill-name">HTML5</span>
+                <span class="skill-lvl">Semantic Web</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-css3-alt"></i>
+                <span class="skill-name">CSS3</span>
+                <span class="skill-lvl">Flexbox &amp; Grid</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-bootstrap"></i>
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-lvl">Mobile-First</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer, Build & Testing Tools -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div>
+                <h3 class="cat-title">Tools &amp; Engineering Workflow</h3>
+                <span class="cat-subtitle">Build, Test, and Version Control</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-chip highlight">
+                <i class="fa-brands fa-git-alt"></i>
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-lvl">Version Control</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-box-open"></i>
+                <span class="skill-name">Maven</span>
+                <span class="skill-lvl">Dependency Mgmt</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-code"></i>
+                <span class="skill-name">IntelliJ IDEA</span>
+                <span class="skill-lvl">Primary Java IDE</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-vial"></i>
+                <span class="skill-name">JUnit</span>
+                <span class="skill-lvl">Unit Testing</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span class="skill-name">Postman</span>
+                <span class="skill-lvl">API Testing</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-moon"></i>
+                <span class="skill-name">Eclipse IDE</span>
+                <span class="skill-lvl">Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Specialized & Applied Skills -->
+          <div class="skill-category-card">
+            <div class="cat-header">
+              <div class="cat-icon"><i class="fa-solid fa-eye"></i></div>
+              <div>
+                <h3 class="cat-title">Specialized Domains</h3>
+                <span class="cat-subtitle">Applied AI &amp; Analytics</span>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <div class="skill-chip highlight">
+                <i class="fa-solid fa-camera"></i>
+                <span class="skill-name">OpenCV</span>
+                <span class="skill-lvl">Computer Vision</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-network-wired"></i>
+                <span class="skill-name">LSTM Networks</span>
+                <span class="skill-lvl">Sequential Models</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-brands fa-google"></i>
+                <span class="skill-name">Google Cloud Analytics</span>
+                <span class="skill-lvl">Certified</span>
+              </div>
+              <div class="skill-chip">
+                <i class="fa-solid fa-key"></i>
+                <span class="skill-name">JWT Tokens</span>
+                <span class="skill-lvl">Stateless Auth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIP EXPERIENCE TIMELINE -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Real-World Experience</span>
+          <h2 class="section-title">Internship <span class="gradient-text">Journey</span></h2>
+          <p class="section-subtitle">Hands-on industry exposure delivering production-oriented code, architectures, and models.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Machine Learning Intern -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="company-badge"><i class="fa-solid fa-building"></i> Hexart.In</span>
+                <span class="time-range"><i class="fa-regular fa-calendar"></i> Dec 2025 &ndash; Apr 2026</span>
+              </div>
+              <h3 class="role-title">Machine Learning Intern</h3>
+              <div class="location-tag"><i class="fa-solid fa-location-dot"></i> Applied AI &amp; Computer Vision Engineering</div>
+
+              <p class="role-summary">
+                Designed and engineered an automated <strong>Indian Sign Language (ISL) recognition system</strong> leveraging real-time video stream ingestion, computer vision, and recurrent deep learning architectures.
+              </p>
+
+              <ul class="role-bullets">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>Engineered an end-to-end computer vision pipeline using <strong>Python and OpenCV</strong> to process live webcam video frames and detect micro hand gestures.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>Trained and tuned <strong>LSTM (Long Short-Term Memory) sequential neural models</strong> to capture temporal dependencies in gesture movements with high classification accuracy.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>Optimized inference latency to achieve continuous real-time recognition of complex dynamic gestures without frame drop.</span>
+                </li>
+              </ul>
+
+              <div class="role-stack">
+                <span class="pill-mini">Python</span>
+                <span class="pill-mini">OpenCV</span>
+                <span class="pill-mini">LSTM Neural Networks</span>
+                <span class="pill-mini">Computer Vision</span>
+                <span class="pill-mini">Real-Time Video Feeds</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Java Backend Intern -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="company-badge"><i class="fa-solid fa-building"></i> Six Phrase Education Institutions</span>
+                <span class="time-range"><i class="fa-regular fa-calendar"></i> May 2025 &ndash; Jun 2025</span>
+              </div>
+              <h3 class="role-title">Java Backend Intern</h3>
+              <div class="location-tag"><i class="fa-solid fa-location-dot"></i> Coimbatore, Tamil Nadu, India</div>
+
+              <p class="role-summary">
+                Focused on enterprise core Java systems, database connectivity, and backend execution performance under high data volume constraints.
+              </p>
+
+              <ul class="role-bullets">
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>Architected and maintained backend Java applications emphasizing clean <strong>Core Java principles, JDBC integration</strong>, and algorithmic data structure optimization.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>Streamlined bulk data ingestion pipelines by designing a <strong>highly efficient multithreaded architecture</strong>, significantly reducing database loading bottlenecks.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-chevron-right"></i>
+                  <span>Authored comprehensive unit tests and modularized business logic to facilitate scalable data manipulation across institutional workflows.</span>
+                </li>
+              </ul>
+
+              <div class="role-stack">
+                <span class="pill-mini">Core Java</span>
+                <span class="pill-mini">JDBC</span>
+                <span class="pill-mini">Multithreading</span>
+                <span class="pill-mini">Data Structure Optimization</span>
+                <span class="pill-mini">Database Ingestion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-code"></i> Engineering Portfolio</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real architectural implementations featuring backend microservices, algorithmic caching, and responsive full-stack applications.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; Java</button>
+          <button class="filter-btn" data-filter="algorithms">Core CS &amp; Algorithms</button>
+          <button class="filter-btn" data-filter="frontend">Frontend &amp; Full Stack</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Student Information System -->
+          <div class="project-card" data-category="backend">
+            <div class="project-card-header">
+              <div class="project-type-badge"><i class="fa-solid fa-server"></i> Enterprise Backend</div>
+              <div class="project-links">
+                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            
+            <h3 class="project-title">Student Information System</h3>
+            <p class="project-tagline">Secure, scalable RESTful API with Role-Based Access Control and relational persistence.</p>
+
+            <p class="project-desc">
+              Architected a robust enterprise application utilizing <strong>Spring Boot</strong> to securely authenticate, manage, and process student academic records across role levels.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-lock"></i>
+                <span><strong>Spring Security &amp; JWT:</strong> Implemented stateless JSON Web Token authentication with strict role-based authorization differentiating administrators and students.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-database"></i>
+                <span><strong>Normalized MySQL &amp; JPA:</strong> Integrated high-speed CRUD operations, relational constraints, and query-optimized data retrieval.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-desktop"></i>
+                <span><strong>Responsive Client Interface:</strong> Connected API endpoints to a responsive frontend facilitating clean administrative workflows.</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">Java 17</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Spring Security</span>
+              <span class="tech-tag">JWT</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Project 2: High-Performance LRU Cache WITH INTERACTIVE DEMO -->
+          <div class="project-card featured-highlight" data-category="algorithms">
+            <div class="project-card-header">
+              <div class="project-type-badge special"><i class="fa-solid fa-bolt"></i> High Performance &bull; O(1) DSA</div>
+              <div class="project-links">
+                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">High-Performance LRU Cache</h3>
+            <p class="project-tagline">In-memory caching engine achieving strict O(1) search, insertion, and eviction with TTL validation.</p>
+
+            <p class="project-desc">
+              Engineered an optimized in-memory cache from scratch without third-party libraries. Combines a custom <strong>Doubly Linked List</strong> and <strong>HashMap</strong> to guarantee deterministic execution bounds.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <span><strong>Strict O(1) Performance:</strong> Constant time lookups, insertions, and least-recently-used evictions using linked node re-wiring.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-clock"></i>
+                <span><strong>Time-to-Live (TTL) Module:</strong> Automatic timestamp validation module evicts stale cache entries proactively to optimize RAM utilization.</span>
+              </div>
+            </div>
+
+            <!-- INTERACTIVE SIMULATOR (Interviewer Magnet!) -->
+            <div class="interactive-cache-box">
+              <div class="cache-box-header">
+                <span><i class="fa-solid fa-microchip"></i> Live Interactive Cache Simulator (Capacity = 4)</span>
+                <span class="cache-stat" id="cacheStatsText">Items: 3 / 4</span>
+              </div>
+
+              <!-- Visual Node Display -->
+              <div class="cache-visualizer" id="cacheVisualizer">
+                <!-- Dynamically populated by JS -->
+              </div>
+
+              <!-- Simulator Controls -->
+              <div class="cache-controls">
+                <div class="control-row">
+                  <input type="text" id="cacheKeyInput" placeholder="Key (e.g. UserA)" maxlength="8" />
+                  <input type="text" id="cacheValInput" placeholder="Val (e.g. 42)" maxlength="8" />
+                  <button id="putCacheBtn" class="btn-cache-action put"><i class="fa-solid fa-plus"></i> PUT</button>
+                  <button id="getCacheBtn" class="btn-cache-action get"><i class="fa-solid fa-magnifying-glass"></i> GET</button>
+                  <button id="resetCacheBtn" class="btn-cache-action reset" title="Reset Demo"><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+                <div class="cache-log" id="cacheLogMsg">Tip: Click <strong>PUT</strong> or <strong>GET</strong> to see O(1) MRU node promotion &amp; eviction!</div>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">HashMap</span>
+              <span class="tech-tag">Doubly Linked List</span>
+              <span class="tech-tag">Strict O(1)</span>
+              <span class="tech-tag">OOP</span>
+              <span class="tech-tag">TTL Expiry</span>
+            </div>
+          </div>
+
+          <!-- Project 3: Expense Tracker Web App -->
+          <div class="project-card" data-category="frontend">
+            <div class="project-card-header">
+              <div class="project-type-badge"><i class="fa-brands fa-react"></i> Full Stack Frontend</div>
+              <div class="project-links">
+                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Expense Tracker Web App</h3>
+            <p class="project-tagline">Dynamic Single Page Application (SPA) for real-time financial tracking and budgeting analytics.</p>
+
+            <p class="project-desc">
+              Developed a high-responsiveness transaction tracking SPA using <strong>React.js</strong> to help users log, categorize, and visually breakdown income and expenses.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-layer-group"></i>
+                <span><strong>Predictable State Management:</strong> Leveraged centralized React state and reusable UI modules for seamless transactions across desktop and mobile.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span><strong>Mobile-First Styling:</strong> Built with modern CSS3 and Bootstrap to guarantee accessibility, speed, and responsive fluidity.</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">JavaScript (ES6+)</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">Single Page App</span>
+            </div>
+          </div>
+
+          <!-- Project 4: Sign Language Recognition (from internship & portfolio) -->
+          <div class="project-card" data-category="backend">
+            <div class="project-card-header">
+              <div class="project-type-badge"><i class="fa-solid fa-brain"></i> Machine Learning / AI</div>
+              <div class="project-links">
+                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Indian Sign Language Recognition</h3>
+            <p class="project-tagline">Real-time computer vision &amp; sequential deep learning model for continuous gesture translation.</p>
+
+            <p class="project-desc">
+              Pioneered an assistive translation system processing live video frames, tracking multi-point hand coordinates and classifying gestures with high temporal accuracy.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-video"></i>
+                <span><strong>Live Stream Analysis:</strong> OpenCV pipeline extracting spatial hand keypoints in real-time under varying lighting conditions.</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-network-wired"></i>
+                <span><strong>LSTM Recurrent Model:</strong> Solved temporal sequence recognition for continuous gesture movements.</span>
+              </div>
+            </div>
+
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">LSTM Deep Learning</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Stream Processing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Background</span>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
+          <p class="section-subtitle">Consistent academic excellence backed by recognized technical credentials.</p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Degree Education -->
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+              <div class="edu-period">2022 &ndash; 2026</div>
+            </div>
+            <h3 class="edu-title">Bachelor of Technology in Computer Science &amp; Engineering</h3>
+            <div class="edu-institution">G. Pulla Reddy Engineering College, Kurnool</div>
+            <div class="edu-score">
+              <span class="score-label">Cumulative GPA:</span>
+              <span class="score-pill">7.41 / 10.0</span>
+            </div>
+            <p class="edu-desc">
+              Comprehensive coursework encompassing Data Structures, Algorithms, Object-Oriented Software Design, Operating Systems, Computer Networks, and Database Management Systems.
+            </p>
+          </div>
+
+          <!-- Intermediate Education -->
+          <div class="edu-card">
+            <div class="edu-header">
+              <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+              <div class="edu-period">2020 &ndash; 2022</div>
+            </div>
+            <h3 class="edu-title">Intermediate (MPC &ndash; Mathematics, Physics, Chemistry)</h3>
+            <div class="edu-institution">Sri Chaitanya Junior College, Kurnool</div>
+            <div class="edu-score">
+              <span class="score-label">Cumulative GPA:</span>
+              <span class="score-pill">8.47 / 10.0</span>
+            </div>
+            <p class="edu-desc">
+              Strong grounding in analytical mathematics, logical reasoning, and scientific methodology.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certifications Row -->
+        <div class="certifications-block">
+          <h3 class="cert-title"><i class="fa-solid fa-certificate"></i> Verified Industry Certifications</h3>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <div class="cert-badge-icon infosys"><i class="fa-brands fa-java"></i></div>
+              <div class="cert-info">
+                <h4>Foundation Certificate in Java</h4>
+                <div class="cert-issuer">Infosys Springboard</div>
+                <p>Validated core Java programming, object-oriented principles, exception handling, and data structure usage.</p>
+              </div>
+              <div class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</div>
+            </div>
+
+            <div class="cert-card">
+              <div class="cert-badge-icon google"><i class="fa-brands fa-google"></i></div>
+              <div class="cert-info">
+                <h4>Google Cloud Data Analytics Certificate</h4>
+                <div class="cert-issuer">Google Cloud</div>
+                <p>Equipped with cloud data fundamentals, query pipelines, and structured analytics on distributed infrastructure.</p>
+              </div>
+              <div class="cert-check"><i class="fa-solid fa-circle-check"></i> Verified</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / HIRE ME SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fa-solid fa-handshake"></i> Let's Connect</span>
+          <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Interested in collaborating or hiring? I'm available for full-time Software Engineer positions.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Info Cards -->
+          <div class="contact-info-column">
+            <h3 class="contact-card-title">Contact Channels</h3>
+            <p class="contact-intro">Feel free to reach out directly via email, phone, or LinkedIn. I typically respond within 24 hours.</p>
+
+            <div class="contact-detail-card" id="emailCard">
+              <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="detail-content">
+                <span class="detail-label">Email Address</span>
+                <a href="mailto:mahe3759@gmail.com" class="detail-val">mahe3759@gmail.com</a>
+              </div>
+              <button class="btn-copy" id="copyEmailBtn" title="Copy Email to Clipboard">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-detail-card" id="phoneCard">
+              <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="detail-content">
+                <span class="detail-label">Phone Number</span>
+                <a href="tel:+919703847338" class="detail-val">+91 9703847338</a>
+              </div>
+              <button class="btn-copy" id="copyPhoneBtn" title="Copy Phone to Clipboard">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-detail-card">
+              <div class="detail-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="detail-content">
+                <span class="detail-label">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" class="detail-val">linkedin.com/in/Mahesh-k</a>
+              </div>
+              <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn-copy" title="Open LinkedIn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="contact-detail-card">
+              <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="detail-content">
+                <span class="detail-label">GitHub Repository</span>
+                <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="detail-val">github.com/Mahesh-k</a>
+              </div>
+              <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" class="btn-copy" title="Open GitHub">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <!-- Resume Download Card -->
+            <div class="resume-download-box">
+              <div class="resume-meta">
+                <i class="fa-solid fa-file-pdf"></i>
+                <div>
+                  <h4>Kammari_Mahesh_Resume.pdf</h4>
+                  <span>Full Stack Java &amp; Software Engineering</span>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm" id="downloadResumeBtn" onclick="window.print()">
+                <i class="fa-solid fa-print"></i> Print / Save Portfolio
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Quick Message Box -->
+          <div class="contact-form-column">
+            <div class="form-wrapper">
+              <h3 class="form-title"><i class="fa-regular fa-paper-plane"></i> Quick Message</h3>
+              <p class="form-subtitle">Send a quick inquiry directly to my inbox:</p>
+              
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="senderName">Your Name</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Hiring Manager / John Doe" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail">Your Email</label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="e.g. name@company.com" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="senderSubject">Subject</label>
+                  <input type="text" id="senderSubject" class="form-input" placeholder="e.g. Software Engineer Opportunity" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="senderMessage">Message</label>
+                  <textarea id="senderMessage" class="form-input" rows="4" placeholder="Hello Mahesh, we reviewed your portfolio and would like to invite you for an interview..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <i class="fa-solid fa-paper-plane"></i> Send Direct Email
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">Mahesh</span>
+          <span class="logo-accent">.dev</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-copy">
+          &copy; 2026 Kammari Mahesh. Designed with high attention to clean architecture, performance, and accessibility.
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-socials">
+          <a href="https://github.com/Mahesh-k" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/Mahesh-k" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:mahe3759@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+919703847338" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <button id="backToTopBtn" class="back-to-top" title="Scroll to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toastMsg" class="toast-msg">Copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
