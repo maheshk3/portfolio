@@ -87,18 +87,17 @@ Then go to **Repository Settings -> Pages -> Deploy from branch: `main` / `root`
 
 ## 🛠️ Included Professional Features
 
-- **Built Specifically for Software Engineering Roles**:
-  - Highlights **Java 17, Spring Boot, Spring Security, JWT, Microservices, REST APIs, MySQL, and React**.
-  - Highlights core CS foundations: **Strict O(1) Cache Architecture, Multithreaded Ingestion, and Data Structures**.
-  - Features internship achievements at **Six Phrase** and **Hexart.In**.
-- **Live Interactive LRU Cache Simulator**:
-  - Interviewers can interactively test `GET` and `PUT` operations and watch node promotions and least-recently-used evictions in real-time.
+- **Flagship Projects**:
+  - **High-Performance LRU Cache (Java)**: Strict O(1) constant-time search, insertion, and eviction with custom Doubly Linked List, HashMap, and TTL expiry module. Features a **Live Interactive LRU Simulator** (Capacity 4) on the card!
+  - **Indian Sign Language Recognition (Python, OpenCV, LSTM)**: Real-time dynamic video gesture detection using 21 spatial landmarks and recurrent temporal modeling. Features an **Interactive Vision Telemetry & Gesture Simulator**!
+  - **Expense Tracker Web App (React.js)**: Single Page Application with centralized state management, responsive Bootstrap & CSS3 styling, and instant financial analytics.
+- **Internships Featured**:
+  - **Summer Internship 2025 (Six Phrase Education Institutions)**: Java Backend Intern architecting multithreaded bulk ingestion pipelines and JDBC connection pooling.
+  - **Hexart.In**: Machine Learning Intern pioneering real-time gesture recognition.
 - **Theme Switcher**:
   - Sleek Slate Dark Mode (default) & Crisp Light Mode, saved automatically in localStorage.
-- **Interactive Terminal**:
+- **Interactive Developer Terminal**:
   - Displays instant developer profile, ready-to-test commands, and quick copy button.
-- **Project Filter Tabs**:
-  - Smooth filtering between *All*, *Backend & Java*, *Core CS & Algorithms*, and *Frontend / Full Stack*.
 - **Contact & Communication**:
   - One-click copy for email (`mahe3759@gmail.com`) and phone (`+91 9703847338`) with toast feedback.
   - Quick contact form with pre-filled `mailto:` email generation.

@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initProjectFilters();
   initLRUCacheSimulator();
+  initISLGestureSimulator();
   initClipboardHelpers();
   initContactForm();
   initTerminalActions();
@@ -55,11 +56,11 @@ function initTypewriter() {
   if (!textElement) return;
 
   const roles = [
-    'Full Stack Java Systems',
-    'Spring Boot & Microservices',
+    'Java Backend Engineering',
     'Strict O(1) Cache Architectures',
-    'Secure RESTful APIs with JWT',
-    'Computer Vision & LSTM Models'
+    'Indian Sign Language (OpenCV + LSTM)',
+    'Summer Backend Intern @ Six Phrase',
+    'React.js Dynamic Web Apps'
   ];
 
   let roleIndex = 0;
@@ -351,6 +352,154 @@ function initLRUCacheSimulator() {
     renderCacheUI();
     logMsg.innerHTML = '<span>Simulator reset with default 3 nodes. Try adding a 5th node to see LRU eviction!</span>';
   });
+}
+
+/* ==========================================================================
+   5B. INTERACTIVE INDIAN SIGN LANGUAGE (ISL) GESTURE SIMULATOR
+   ==========================================================================
+   Simulates 21-point spatial hand coordinate extraction & LSTM model inference
+   ========================================================================== */
+function initISLGestureSimulator() {
+  const linesGroup = document.getElementById('skeletonLines');
+  const nodesGroup = document.getElementById('skeletonNodes');
+  const predVal = document.getElementById('islPredictionVal');
+  const confNum = document.getElementById('islConfidenceNum');
+  const confBar = document.getElementById('islConfidenceBar');
+  const fpsBadge = document.getElementById('islFpsBadge');
+  const gestureBtns = document.querySelectorAll('.btn-gesture');
+
+  if (!linesGroup || !nodesGroup || gestureBtns.length === 0) return;
+
+  // Standard bone connections across 21 landmarks
+  const connections = [
+    [0, 1], [1, 2], [2, 3], [3, 4],       // Thumb
+    [0, 5], [5, 6], [6, 7], [7, 8],       // Index
+    [5, 9], [9, 10], [10, 11], [11, 12],  // Middle
+    [9, 13], [13, 14], [14, 15], [15, 16],// Ring
+    [13, 17], [17, 18], [18, 19], [19, 20], // Pinky
+    [0, 17]                               // Palm base
+  ];
+
+  // 21 (x, y) coordinates for each gesture (normalized within 200x180 viewBox)
+  const gestureData = {
+    hello: {
+      label: '👋 HELLO / GREETING',
+      confidence: '98.6%',
+      latency: '11ms',
+      points: [
+        [100, 160], // 0: Wrist
+        [75, 140], [60, 120], [50, 105], [40, 90],   // Thumb
+        [78, 110], [72, 80], [68, 55], [65, 30],     // Index
+        [98, 105], [98, 75], [98, 50], [98, 22],     // Middle
+        [118, 110], [122, 80], [125, 55], [128, 32], // Ring
+        [138, 120], [145, 95], [152, 75], [158, 50]  // Pinky
+      ]
+    },
+    thankyou: {
+      label: '🙏 THANK YOU (धन्यवाद)',
+      confidence: '99.2%',
+      latency: '10ms',
+      points: [
+        [100, 165], // 0: Wrist
+        [80, 145], [72, 130], [68, 115], [65, 100],  // Thumb
+        [85, 115], [84, 88], [83, 62], [82, 36],     // Index
+        [98, 112], [98, 85], [98, 58], [98, 30],     // Middle
+        [112, 115], [113, 88], [114, 62], [115, 38], // Ring
+        [125, 122], [126, 96], [127, 72], [128, 48]  // Pinky
+      ]
+    },
+    yes: {
+      label: '👍 YES / CONFIRMED',
+      confidence: '98.1%',
+      latency: '12ms',
+      points: [
+        [100, 160], // 0: Wrist
+        [82, 135], [70, 105], [68, 75], [66, 42],    // Thumb UP!
+        [92, 125], [105, 120], [115, 125], [112, 135], // Index Curled
+        [102, 128], [114, 124], [122, 128], [118, 138], // Middle Curled
+        [112, 132], [122, 129], [128, 133], [124, 142], // Ring Curled
+        [122, 138], [130, 135], [134, 140], [130, 148]  // Pinky Curled
+      ]
+    },
+    peace: {
+      label: '✌️ PEACE / VICTORY',
+      confidence: '97.5%',
+      latency: '11ms',
+      points: [
+        [100, 160], // 0: Wrist
+        [80, 140], [92, 128], [105, 126], [112, 132], // Thumb holding ring
+        [84, 110], [78, 80], [72, 52], [66, 26],      // Index EXTENDED V
+        [102, 108], [108, 78], [114, 50], [120, 24],  // Middle EXTENDED V
+        [118, 125], [124, 132], [120, 140], [115, 142], // Ring Curled
+        [130, 130], [135, 138], [132, 144], [126, 148]  // Pinky Curled
+      ]
+    },
+    welcome: {
+      label: '🤝 WELCOME / NAMASTE',
+      confidence: '99.5%',
+      latency: '9ms',
+      points: [
+        [100, 155], // 0: Wrist
+        [78, 135], [66, 115], [58, 98], [54, 82],    // Thumb
+        [84, 112], [80, 85], [82, 60], [88, 40],     // Index curved
+        [98, 108], [98, 80], [99, 56], [102, 36],    // Middle curved
+        [114, 112], [116, 85], [115, 60], [112, 42], // Ring curved
+        [128, 120], [130, 95], [127, 72], [120, 52]  // Pinky curved
+      ]
+    }
+  };
+
+  function renderGesture(gestureKey) {
+    const data = gestureData[gestureKey];
+    if (!data) return;
+
+    // Update lines
+    linesGroup.innerHTML = '';
+    connections.forEach(([i, j]) => {
+      const p1 = data.points[i];
+      const p2 = data.points[j];
+      const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+      line.setAttribute('x1', p1[0]);
+      line.setAttribute('y1', p1[1]);
+      line.setAttribute('x2', p2[0]);
+      line.setAttribute('y2', p2[1]);
+      linesGroup.appendChild(line);
+    });
+
+    // Update nodes
+    nodesGroup.innerHTML = '';
+    data.points.forEach(([x, y], idx) => {
+      const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('cx', x);
+      circle.setAttribute('cy', y);
+      circle.setAttribute('r', idx === 0 ? '5' : (idx % 4 === 0 ? '4' : '3.2'));
+      if (idx % 4 === 0) {
+        circle.style.fill = '#38bdf8'; // fingertip accent
+      }
+      nodesGroup.appendChild(circle);
+    });
+
+    // Update text & gauges
+    predVal.textContent = data.label;
+    confNum.textContent = data.confidence;
+    confBar.style.width = data.confidence;
+    if (fpsBadge) {
+      fpsBadge.innerHTML = `<i class="fa-solid fa-bolt"></i> ${data.latency} Latency &bull; 60 FPS`;
+    }
+  }
+
+  // Bind click listeners
+  gestureBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      gestureBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const gesture = btn.getAttribute('data-gesture');
+      renderGesture(gesture);
+    });
+  });
+
+  // Initial render
+  renderGesture('hello');
 }
 
 /* ==========================================================================
